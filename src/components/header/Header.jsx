@@ -2,14 +2,35 @@ import React from 'react';
 import CTA from './CTA';
 import HeaderSocials from './HeaderSocials';
 import './header.css';
+import Typewriter from 'typewriter-effect';
 
 const Header = () => {
   return (
     <header id="home">
       <div className="container header__container">
-        <h5>Hello I'm</h5>
-        <h1>Meri Gogichashvili</h1>
-        <h5 className="text-light">Full-stack Developer</h5>
+        <h4>Hello I'm</h4>
+        <h1>Karthikeya Boorla</h1>
+        <span>I'm a </span>
+                <Typewriter
+                  options={{
+                    autoStart: true,
+                    loop: true,
+                  }}
+                  onInit={(typewriter) => {
+                    typewriter
+                      .pauseFor(500)
+                      .typeString(
+                        `<span className = "profession" >Full Stack Developer.</span>`
+                      )
+                      .pauseFor(300)
+                      .deleteChars(21)
+                      .typeString(
+                        `<h1>Life Long Learner.</h1>`
+                      )
+                      .pauseFor(1000)
+                      .start();
+                  }}
+                />
         <CTA />
         <a href="#contact" className="scroll__down">
           Scroll Down

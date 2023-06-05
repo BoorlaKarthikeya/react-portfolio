@@ -1,10 +1,10 @@
-.portfolio__container {
+.education__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
 }
 
-.portfolio__item {
+.education__item {
     background: var(--color-bg-variant);
     padding: 1.3rem;
     border-radius: 2rem;
@@ -12,47 +12,51 @@
     transition: var(--transition);
 }
 
-.portfolio__item:hover {
+.education__item:hover {
     border-color: var(--color-primary-variant);
     background: transparent;
 }
 
-.portfolio__item-image {
+.education__item-image {
     border-radius: 1.5rem;
     overflow: hidden;
-    height: 30%;
 }
 
-
-.portfolio__item h3 {
+.education__item h3 {
     margin: 2rem 0;
 }
 
-.portfolio__item p {
+.education__item p {
     margin: 0 0 1.2rem 0;
     font-size: 0.9rem;
 }
 
-.portfolio__item-cta {
+.education__item-cta {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     margin-bottom: 2rem; 
 }
 
-.portfolio__item-content {
-    height: 50%;
+.education__item-content {
+    height: 30%;
+    
 }
 
 @media screen and (max-width: 1024px){
-    .portfolio__container {
+    .education__container {
         grid-template-columns: 1fr 1fr;
         gap: 1.2rem;
     }
 }
   
 @media screen and (max-width: 600px){
-    .portfolio__container {
+    .education__container {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+}
+
+#education h2{
+    font-size: 2.5rem;
+    font-weight: bold; 
 }
