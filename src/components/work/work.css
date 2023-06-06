@@ -1,0 +1,13 @@
+.experienceImg{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#work{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0rem;
+    color: var(--color-primary);
+    text-align: center;
+    font-size: 2rem;
+}

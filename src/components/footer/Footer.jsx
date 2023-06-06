@@ -21,6 +21,7 @@ const Footer = () => {
         <li><a href="#education">Education</a></li>
         <li><a href="#course">Courses</a></li>
         <li><a href="#Achievements">Achievements</a></li>
+        <li><a href="#work">Experience</a></li>
         <li><a href="#portfolio">Projects</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#contact">Contact</a></li>

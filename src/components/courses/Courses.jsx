@@ -15,7 +15,7 @@ const courses = () => {
     },
     {
       id: 2,
-      title: 'Ethical Hacking ',
+      title: 'Ethical Hacking - NPTEL',
       img: IMG2,
     
       link: "https://drive.google.com/file/d/11ScUC_BegyWov6mopt0h4toclgriYXJ8/view?usp=sharing",
@@ -23,7 +23,7 @@ const courses = () => {
     },
     {
       id: 3,
-      title: "Cryptography and Network Security",
+      title: "Cryptography and Network Security - NPTEL",
       img: IMG2,
 
       link: "https://drive.google.com/file/d/1blixYrFxDN2IVadpohxnPkZld3wNiMaf/view?usp=sharing",

@@ -20,7 +20,7 @@ const education = () => {
     },
     {
       id: 2,
-      title: 'Sri Chaitanya Junior college , DD colony , Hyderabad (2019 - 2025 )',
+      title: 'Sri Chaitanya Junior college , DD colony , Hyderabad (2019 - 2021 )',
       subtitle: "class : XII  Major: Science (Physics, Chemistry, Mathematics) ",
       img: IMG2,
       description:

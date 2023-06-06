@@ -20,6 +20,7 @@ const Achievements = () => {
       title: 'TS-EAMCET 2021',
       img: IMG2,
       subtitle: "State Rank - 1082",
+      link:'',
       
 
     },
@@ -28,17 +29,26 @@ const Achievements = () => {
       title: "Joint Entrance Examination - 2021",
       subtitle : "percentile - 9.63%",
       img: IMG3,
+      link:'',
+
     },
     {
       id: 4,
       title: "Cricket Shruthi - 2023 (CBIT)",
       subtitle : "Runner Up team(CSE-3)",
       img: IMG4,
+      link:'',
+
     },
 
     
     
   ];
+
+  const openLink = (url) => {
+    let win = window.open(url, "_blank");
+    win.focus();
+  };
 
   return (
     <section id="Achievements">
@@ -55,7 +65,7 @@ const Achievements = () => {
               <h3>{pro.title}</h3>
               <p>{pro.subtitle}</p>
             </div>
-            <div className="course__item-cta">
+            {pro.link && (<div className="course__item-cta" onClick={() => openLink(pro.link)}>
               <a
                 href={pro.link}
                 target="_blank"
@@ -64,7 +74,8 @@ const Achievements = () => {
               >
                 Certificate
               </a>
-            </div>
+            </div>)}
+            
           </article>
         ))}
       </div>
