@@ -7,7 +7,9 @@ import Intro from './components/intro/Intro';
 import Portfolio from './components/portfolio/Portfolio';
 import Education from './components/Education/education';
 import Testimonials from './components/testimonials/Testimonials';
+import Courses from './components/courses/Courses';
 import Topbar from './components/topbar/Topbar';
+import Achievements from './components/achievements/Achievements';
 
 
 const App = () => {
@@ -18,7 +20,9 @@ const App = () => {
       <Intro />
       <Experience />
       <Education/>
-      <Portfolio />
+      <Courses/>
+      <Achievements/>
+      <Portfolio/>
       <Testimonials />
       <Contact />
       <Footer />

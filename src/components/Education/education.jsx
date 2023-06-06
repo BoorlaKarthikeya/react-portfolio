@@ -9,7 +9,7 @@ const education = () => {
   const soloProjects = [
     {
       id: 1,
-      title: 'Chaitanya Bharathi institute of technology ',
+      title: 'Chaitanya Bharathi institute of technology (2021 -2025)',
       subtitle: "Computer Science Engineering (CSE)",
       img: IMG1,
       description:
@@ -20,7 +20,7 @@ const education = () => {
     },
     {
       id: 2,
-      title: 'Sri Chaitanya Junior college , DD colony , Hyderabad ',
+      title: 'Sri Chaitanya Junior college , DD colony , Hyderabad (2019 - 2025 )',
       subtitle: "class : XII  Major: Science (Physics, Chemistry, Mathematics) ",
       img: IMG2,
       description:
@@ -31,7 +31,7 @@ const education = () => {
     },
     {
       id: 3,
-      title: "Telangana Social Welfare Residential School , Shaikpet , Hyderabad",
+      title: "Telangana Social Welfare Residential School , Shaikpet , Hyderabad (2017 - 2019)",
       subtitle: "Class : X",
       img: IMG3,
       description:

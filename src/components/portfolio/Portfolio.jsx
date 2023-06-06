@@ -1,10 +1,12 @@
 import React from 'react';
-import IMG1 from '../../assets/bookstore.png';
-import IMG2 from '../../assets/todo.png';
-import IMG3 from '../../assets/shelter.png';
-import IMG4 from '../../assets/fake.png';
-import IMG5 from '../../assets/news.png';
-import IMG6 from '../../assets/math.png';
+import IMG1 from '../../assets/news.jpeg';
+import IMG2 from '../../assets/tictactoe.jpeg';
+import IMG3 from '../../assets/portfolio.png';
+import IMG4 from '../../assets/canteenbill.jpeg';
+import IMG5 from '../../assets/claculator.jpeg';
+import IMG6 from '../../assets/clock.jpeg';
+import IMG7 from '../../assets/parallax.jpeg';
+import IMG8 from '../../assets/devLanding.png';
 
 import './portfolio.css';
 
@@ -12,69 +14,89 @@ const Portfolio = () => {
   const soloProjects = [
     {
       id: 1,
-      title: 'Bookstore',
+      title: 'HeadlineHub',
       img: IMG1,
       description:
-        'BookStore app that allows users to store books and update progress',
-      technologies: 'React | Redux | Ruby on Rails',
-      link: 'https://melodic-boba-111583.netlify.app/',
-      github: 'https://github.com/Meri-MG/bookstore---react',
+      "As part of my web development, I developed a dynamic news web application using React and integrated it with an API. ",
+      technologies: 'React | javascript | HTML | CSS | Bootstrap',
+      link: "https://drive.google.com/file/d/1nl9NC1ZvlBZTPkJAb2Z9xMdloozsVkkp/view?usp=sharing",
+      github: 'https://github.com/BoorlaKarthikeya/HeadlineHub-react-API-based-news-web-App-',
     },
     {
       id: 2,
-      title: 'FakeStore',
-      img: IMG4,
+      title: 'TicTacToe Game',
+      img: IMG2,
       description:
-        'FakeStore app that provides information about available products and their details',
-      technologies: 'React | Redux',
-      link: 'https://fakestore-metrics.netlify.app/',
-      github: 'https://github.com/Meri-MG/Fakestore---react',
+        'Built a React Tic-Tac-Toe game with responsive UI, interactive gameplay, and real-time updates for an engaging experience.',
+      technologies: 'React | HTML | CSS | Javascript',
+      link: 'https://boorlakarthikeya.github.io/TicTacToe-using-React/',
+      github: 'https://github.com/BoorlaKarthikeya/TicTacToe-using-React',
     },
     {
       id: 3,
-      title: 'To-Do-App',
-      img: IMG2,
-      description: 'User friendly app to plan your day and manage tasks',
-      technologies: 'JavaScript | Webpack',
-      link: 'https://meri-mg.github.io/To-Do-List/dist/',
-      github: 'https://github.com/Meri-MG/To-Do-List',
+      title: 'Portfolio',
+      img: IMG3,
+      description: 'You are watching it right now 😉.',
+      technologies: 'React | HTML | CSS | Javascript | Material UI',
+      link: '',
+      github: 'https://github.com/BoorlaKarthikeya/react-portfolio/',
     },
     {
       id: 4,
-      title: 'Shelter',
-      img: IMG3,
+      title: 'Canteen Bill Generator',
+      img: IMG4,
       description:
-        'Fully responsive interactive website built based on Figma design',
-      technologies: 'JavaScript | CSS',
-      link: 'https://meri-mg.github.io/shelter/pages/main/index.html',
-      github: 'https://github.com/Meri-MG/shelter',
+        'Created a Python program for generating canteen bills. Features include itemized billing, calculation of total cost, and generating a printable receipt for seamless canteen management.',
+      technologies: 'Python',
+      link: '',
+      github: 'https://github.com/BoorlaKarthikeya/Canteen-bill-Genrator-Project',
     },
     {
       id: 5,
-      title: 'World News',
+      title: 'claculator',
       img: IMG5,
       description:
-        'Fully responsive interactive website built based on Adobe XD design',
-      technologies: 'JavaScript | CSS',
-      link: 'https://meri-mg.github.io/Unilab-world-news/',
-      github: 'https://github.com/Meri-MG/Unilab-world-news',
+        'Developed a calculator web application using HTML, CSS, and JavaScript. Implemented basic arithmetic operations, responsive design, and interactive functionality to provide users with a convenient and user-friendly calculator tool.',
+      technologies: 'JavaScript | CSS | HTML',
+      link: 'https://boorlakarthikeya.github.io/Web-Dev-Projects/calculator/index.html',
+      github: 'https://github.com/BoorlaKarthikeya/Web-Dev-Projects/tree/master/calculator',
     },
     {
       id: 6,
-      title: 'Math Resource',
+      title: 'Analog Clock',
       img: IMG6,
       description:
-        'Real-world group project which is still in progress and will provide educational platform for future young developers',
-      technologies: 'JavaScript | Scss | Python',
-      link: 'https://lukinoo.github.io/math-resource/',
-      github: 'https://github.com/lukinoo/math-resource',
+        'Designed and implemented an analog clock using HTML, CSS, and JavaScript. The clock displays the current time with rotating hour, minute, and second hands, providing a visually appealing timekeeping experience.',
+      technologies: 'JavaScript | CSS | HTML',
+      link: "https://boorlakarthikeya.github.io/Web-Dev-Projects/Analog%20Clock/index.html",
+      github: "https://github.com/BoorlaKarthikeya/Web-Dev-Projects/tree/master/Analog%20Clock",
+    },
+    {
+      id: 6,
+      title: 'Parallax Website',
+      img: IMG7,
+      description:
+      'Crafted a visually captivating parallax website using HTML, CSS, and JavaScript, combining scrolling effects and layered elements for an immersive user experience.',
+      technologies: ' CSS | HTML',
+      link: "https://boorlakarthikeya.github.io/Web-Dev-Projects/parallaxWebsite/index.html",
+      github: "https://github.com/BoorlaKarthikeya/Web-Dev-Projects/tree/master/parallaxWebsite",
+    },
+    {
+      id: 6,
+      title: 'Developers Landing Page',
+      img: IMG8,
+      description:
+        'Designed developer landing page with HTML, CSS, and JS to showcase skills, projects, and contact information for professional visibility.',
+      technologies: 'CSS | HTML',
+      link: "https://boorlakarthikeya.github.io/Web-Dev-Projects/LAndingPage/index.html",
+      github: "https://github.com/BoorlaKarthikeya/Web-Dev-Projects/tree/master/LAndingPage",
     },
   ];
 
   return (
     <section id="portfolio">
       <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h2>Projects</h2>
 
       <div className="container portfolio__container">
         {soloProjects.map((pro) => (
@@ -102,12 +124,13 @@ const Portfolio = () => {
                 className="btn btn-primary"
                 rel="noreferrer"
               >
-                Visit Website
+                Live Demo
               </a>
             </div>
           </article>
         ))}
       </div>
+      
     </section>
   );
 };
