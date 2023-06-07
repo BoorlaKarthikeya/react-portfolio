@@ -72,7 +72,7 @@ const Portfolio = () => {
       github: "https://github.com/BoorlaKarthikeya/Web-Dev-Projects/tree/master/Analog%20Clock",
     },
     {
-      id: 6,
+      id: 7,
       title: 'Parallax Website',
       img: IMG7,
       description:
@@ -82,7 +82,7 @@ const Portfolio = () => {
       github: "https://github.com/BoorlaKarthikeya/Web-Dev-Projects/tree/master/parallaxWebsite",
     },
     {
-      id: 6,
+      id: 8,
       title: 'Developers Landing Page',
       img: IMG8,
       description:

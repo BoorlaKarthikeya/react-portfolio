@@ -49,7 +49,7 @@ const Testimonials = () => {
       img : IMG4,
       name: 'Narendhar Reddy',
       role: '',
-      test: " Karthikeya is an exceptional full stack developer with a visionary mindset. His technical expertise, innovative thinking, and collaborative spirit set him apart. With a deep understanding of both front-end and back-end development, he delivers seamless solutions. Karthikeya's commitment to continuous learning ensures he stays ahead of the curve. Working with him guarantees outstanding results and a rewarding experience.",
+      test: " Karthikeya is an exceptional full stack developer with a versatile skill set. His expertise spans both front-end and back-end development, and his attention to detail is impeccable. With a strong work ethic and a passion for problem-solving, Karthikeya consistently delivers outstanding results. He is an invaluable asset to any development team.",
     },
     
   ];

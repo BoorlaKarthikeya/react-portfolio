@@ -16,10 +16,12 @@ const Contact = () => {
         'service_ac9dhm5',
         'template_zuzrjwi',
         formRef.current,
+        'ahRzRP_DbaUrC5ZIS',
       )
       .then(
         (result) => {
           console.log(result.text);
+          console.log('message sent');
         },
         (error) => {
           console.log(error.text);

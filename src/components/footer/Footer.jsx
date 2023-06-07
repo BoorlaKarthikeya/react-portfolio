@@ -1,23 +1,42 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa';
 import './footer.css';
 
 const Footer = () => {
-  
+  const [quoteData, setQuoteData] = useState(null);
+
+  useEffect(() => {
+    async function getApi() {
+      try {
+        const num = Math.floor(Math.random()*100);
+        const response = await fetch(`https://dummyjson.com/quotes/${num}`);
+        const data = await response.json();
+        console.log(data);
+        setQuoteData(data);
+      } catch (error) {
+        console.log('Error:', error);
+      }
+    }
+
+    getApi();
+  }, []);
+
   let getYear = () => {
     let currentYear = new Date().getFullYear();
     return currentYear;
   };
 
-  
   return (
     <footer>
       <a href="#home" className="footer__logo">Karthikeya Boorla</a>
-      <div>
-        
-      </div>
+      {quoteData && (
+        <div className = "quote">
+          <em>{quoteData.quote} <sub>-{quoteData.author}</sub></em>
+        </div>
+      )}
+      {/* Rest of the JSX */}
       <ul className="permalinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -39,7 +58,7 @@ const Footer = () => {
         <small>&copy; ET {getYear()}. All rights reserved.</small>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
