@@ -13,7 +13,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import './testimonials.css';
 import IMG1 from '../../assets/santosh.jpeg';
-import IMG2 from '../../assets/shiva.jpg'
+import IMG2 from '../../assets/shiva2.jpg';
+import IMG3 from '../../assets/dillep.jpg';
+import IMG4 from '../../assets/narendhar.jpg';
 
 const Testimonials = () => {
   const testimonials = [
@@ -36,8 +38,16 @@ const Testimonials = () => {
     {
       id: 3,
       link: '',
-      img : IMG2,
+      img : IMG3,
       name: 'Dileep Kumar',
+      role: '',
+      test: " Karthikeya is an exceptional full stack developer with a visionary mindset. His technical expertise, innovative thinking, and collaborative spirit set him apart. With a deep understanding of both front-end and back-end development, he delivers seamless solutions. Karthikeya's commitment to continuous learning ensures he stays ahead of the curve. Working with him guarantees outstanding results and a rewarding experience.",
+    },
+    {
+      id: 4,
+      link: 'https://www.linkedin.com/in/naren8790/',
+      img : IMG4,
+      name: 'Narendhar Reddy',
       role: '',
       test: " Karthikeya is an exceptional full stack developer with a visionary mindset. His technical expertise, innovative thinking, and collaborative spirit set him apart. With a deep understanding of both front-end and back-end development, he delivers seamless solutions. Karthikeya's commitment to continuous learning ensures he stays ahead of the curve. Working with him guarantees outstanding results and a rewarding experience.",
     },
