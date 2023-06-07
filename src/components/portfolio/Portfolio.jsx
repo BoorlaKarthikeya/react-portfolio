@@ -38,7 +38,7 @@ const Portfolio = () => {
       img: IMG3,
       description: 'You are watching it right now 😉.',
       technologies: 'React | HTML | CSS | Javascript | Material UI',
-      link: '',
+      link: '#home',
       github: 'https://github.com/BoorlaKarthikeya/react-portfolio/',
     },
     {
@@ -53,7 +53,7 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      title: 'claculator',
+      title: 'calculator',
       img: IMG5,
       description:
         'Developed a calculator web application using HTML, CSS, and JavaScript. Implemented basic arithmetic operations, responsive design, and interactive functionality to provide users with a convenient and user-friendly calculator tool.',
@@ -118,14 +118,14 @@ const Portfolio = () => {
               >
                 GitHub
               </a>
-              <a
+              {pro.link && <a
                 href={pro.link}
                 target="_blank"
                 className="btn btn-primary"
                 rel="noreferrer"
               >
                 Live Demo
-              </a>
+              </a>}
             </div>
           </article>
         ))}

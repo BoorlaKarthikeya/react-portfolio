@@ -27,7 +27,7 @@ const Achievements = () => {
     {
       id: 3,
       title: "Joint Entrance Examination - 2021",
-      subtitle : "percentile - 9.63%",
+      subtitle : "percentile - 96.63%",
       img: IMG3,
       link:'',
 

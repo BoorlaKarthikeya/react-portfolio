@@ -17,8 +17,8 @@ const Intro = () => {
         </div>
         <div className="about__content">
 
-          <p>I am a Computer Science and Engineering undergrad at Chaitanya Bharathi Institute of Technology pursuing my junior year. I am passionate about building applications that make an impact in the real world.</p>
-          <p>I am a highly motivated and detail-oriented individual with a strong foundation in programming languages such as Java, Python, and C. With experience in software development methodologies such as Agile, I have experience with HTML, CSS, JavaScript, and frontend developmental tools such as bootstrap. I am eager to apply my skills to real-world projects and expand my knowledge.</p>
+          <p>I am a Computer Science and Engineering undergrad at Chaitanya Bharathi Institute of Technology pursuing my second year. I am passionate about building applications that make an impact in the real world.</p>
+          <p>I am a highly motivated and detail-oriented individual with a strong foundation in programming languages such as Java, Python, and C. With experience in software development methodologies such as Agile, I have experience with HTML, CSS, JavaScript, and frontend developmental tools such as bootstrap. Additionally, I excel as a React and MERN stack developer, and I am skilled in Django. I am eager to apply my expertise to real-world projects and further expand my knowledge.</p>
           <a href="#contact" className="btn btn-primary">Let's Talk</a>
         </div>
       </div>

@@ -3,6 +3,8 @@ import emailjs from '@emailjs/browser';
 import { MdOutlineEmail } from 'react-icons/md';
 import './contact.css';
 
+
+
 const Contact = () => {
   const [message, setMessage] = useState(false);
   const formRef = useRef();
@@ -11,10 +13,9 @@ const Contact = () => {
     setMessage(true);
     emailjs
       .sendForm(
-        'service_k2qawqh',
-        'template_c6rkpn6',
+        'service_ac9dhm5',
+        'template_zuzrjwi',
         formRef.current,
-        'X7K7ebhIeOy3YwHki'
       )
       .then(
         (result) => {
