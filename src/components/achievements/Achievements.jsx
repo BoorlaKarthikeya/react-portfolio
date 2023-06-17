@@ -3,6 +3,7 @@ import IMG1 from '../../assets/leetcode.png';
 import IMG2 from '../../assets/tseamcet.jpeg';
 import IMG3 from '../../assets/jee.jpeg';
 import IMG4 from '../../assets/chaitanyaKreeda.jpeg';
+import IMG5 from '../../assets/hackerank.png';
 import './achievements.css';
 
 const Achievements = () => {
@@ -13,6 +14,17 @@ const Achievements = () => {
       subtitle: "Solved 300+ problems on Leetcode",
       img: IMG1,
       link: "https://leetcode.com/KarthikeyaBoorla/",
+      linkName : 'Profile',
+
+    },
+    {
+      id: 5,
+      title: 'HACKERANK',
+      subtitle: "5 star, Golden Batch for SQL on HACKERANK",
+      img: IMG5,
+      link: "https://www.hackerrank.com/karthikeyaburla?hr_r=1",
+      linkName : 'Profile',
+
 
     },
     {
@@ -72,7 +84,7 @@ const Achievements = () => {
                 className="btn btn-primary"
                 rel="noreferrer"
               >
-                Certificate
+                {pro.linkName}
               </a>
             </div>)}
             

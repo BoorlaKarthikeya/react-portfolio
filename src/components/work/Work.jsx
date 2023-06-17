@@ -9,6 +9,7 @@ import './work.css';
 
 
 const Work = () =>{
+  
 
 return(
     <div>
@@ -29,6 +30,8 @@ return(
         <ul>
     <li>⚡An Electoral Literacy Club is a platform to engage college students through interesting activities and hands-on experience to sensitize them on their electoral rights and familiarize them with the electoral process of registration and voting. ELCs are also present in colleges and rural communities.</li><li>⚡At ELCs, learning meets fun. Activities and Games are designed to stimulate and motivate students provoking them to think and ask questions. Through ELC, Election Commission of India, aims at strengthening the culture of electoral participation among young and future voters.</li></ul>
     </div>
+    
+
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
@@ -46,6 +49,7 @@ return(
             <li>⚡We conduct hackathons, bootcamps and workshops to teach students different technologies while promoting open source culture.</li>
         </ul>
     </div>
+    
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
@@ -78,6 +82,7 @@ return(
     <li>⚡HackItOn is CBIT's club focused on the inclusive development of students. The main purpose of this club is to keep students up-to-date on all hackathons hosted by various companies and universities that students can participate in. The club also hosts student hackathons, providing students with opportunities to enhance their soft skills such as leadership, mentoring, and communication.</li><li>⚡ The club promotes industry-standard skills through a series of imaginative hackathons, helping engineers learn and develop technical skills, practice real-time problem-solving techniques, and acquire industry-specific skills.</li>
     </ul>
     </div>
+
   </VerticalTimelineElement>
 </VerticalTimeline>
 </div>

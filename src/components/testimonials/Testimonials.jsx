@@ -16,9 +16,28 @@ import IMG1 from '../../assets/santosh.jpeg';
 import IMG2 from '../../assets/shiva2.jpg';
 import IMG3 from '../../assets/dillep.jpg';
 import IMG4 from '../../assets/narendhar.jpg';
+import IMG5 from '../../assets/bhanuprasad.jpeg';
+import IMG6 from '../../assets/nishanth.jpeg';
 
 const Testimonials = () => {
   const testimonials = [
+    
+    {
+      id: 5,
+      link: 'https://www.linkedin.com/in/bhanu-prasad-paitar-583188249/',
+      img : IMG5,
+      name: 'Bhanu Prasad',
+      role: 'President-ELC CBIT',
+      test: "Karthikeya is an exceptional member of our Electoral Literacy Club, showcasing a remarkable blend of hard work, technical expertise, and creative ideas. His dedication, tech skills, and innovative thinking have significantly contributed to our club's success. Karthikeya's commitment, proficiency, and collaborative spirit make him an invaluable asset to our team.Karthikeya/'s relentless pursuit of excellence and his ability to inspire others with his ideas have elevated the impact of our club. We are grateful for his contributions and confident in his potential for future achievements.",
+    },
+    {
+      id: 6,
+      link: 'https://www.linkedin.com/in/nishanth-artham-1a572b212/',
+      img : IMG6,
+      name: 'Nishanth',
+      role: 'Technical Team Head- CBIT COSC',
+      test: "I highly commend Karthikeya for his exceptional contributions and dedication to our CBIT-COSC Club. His technical expertise, problem-solving skills, and leadership have been invaluable. Karthikeya's passion for technology, continuous learning, and collaborative spirit have greatly enriched our club. He is a respected member who consistently goes above and beyond, inspiring others to excel. I wholeheartedly recommend Karthikeya for any future endeavors.",
+    },
     {
       id: 1,
       link: 'https://www.linkedin.com/in/sai-santosh-bonagiri-335168225/',
@@ -55,7 +74,7 @@ const Testimonials = () => {
   ];
   return (
     <section id="testmonials">
-      <h5>Feedback from my peers</h5>
+      <h5>Feedback from my peers & Mentors</h5>
       <h2>Testimonials</h2>
       <Swiper 
         className="container testimonials__container"
@@ -71,7 +90,7 @@ const Testimonials = () => {
             
           </div>
           <h3 className='client__name'>{test.name}</h3>
-          {test.role && <h5>{test.role}</h5>}
+          {test.role && <h4>{test.role}</h4>}
           
           <em className="client__review">{'"'+test.test + '"'}</em>
         </SwiperSlide>

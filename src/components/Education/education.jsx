@@ -51,7 +51,7 @@ const education = () => {
 
       <div className="container education__container">
         {soloProjects.map((pro) => (
-          <article className="education__item" key={pro.id}>
+          <article className="education__item  " key={pro.id}>
             <div className="education__item-image">
               <img src={pro.img} alt={pro.title} />
             </div>

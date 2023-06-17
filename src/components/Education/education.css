@@ -34,7 +34,7 @@
 .education__item-cta {
     display: flex;
     gap: 0.5rem;
-    margin-bottom: 2rem; 
+    margin: 2rem 0rem 2rem 0rem; 
 }
 
 .education__item-content {
