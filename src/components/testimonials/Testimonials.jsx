@@ -1,9 +1,7 @@
 import React from 'react';
-import { BsLinkedin } from 'react-icons/bs';
 import { Pagination } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow } from 'swiper';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -86,7 +84,7 @@ const Testimonials = () => {
         {testimonials.map((test) => (
           <SwiperSlide className="testimonial" key={test.id}>
           <div className="client__avatar">
-            <a  href={test.link?test.link:''} target='_blank'><img src={test.img} alt="" /></a>
+            <a  href={test.link?test.link:''} target='_blank' rel="noreferrer"><img src={test.img} alt=""  /></a>
             
           </div>
           <h3 className='client__name'>{test.name}</h3>
