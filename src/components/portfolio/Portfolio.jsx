@@ -7,11 +7,22 @@ import IMG5 from '../../assets/claculator.jpeg';
 import IMG6 from '../../assets/clock.jpeg';
 import IMG7 from '../../assets/parallax.jpeg';
 import IMG8 from '../../assets/devLanding.png';
+import IMG9 from '../../assets/lms.jpeg';
 
 import './portfolio.css';
 
 const Portfolio = () => {
   const soloProjects = [
+    {
+      id: 9,
+      title: 'Library Management System',
+      img: IMG9,
+      description:
+      "The Library Management System is a comprehensive web-based application developed using the Django framework. It aims to provide an efficient and user-friendly platform for managing various aspects of a library. ",
+      technologies: 'Django | javascript | HTML | CSS | Bootstrap',
+      link: '',
+      github: 'https://github.com/BoorlaKarthikeya/Library_Management_System/tree/main2/LMS',
+    },
     {
       id: 1,
       title: 'HeadlineHub',
@@ -100,7 +111,7 @@ const Portfolio = () => {
 
       <div className="container portfolio__container">
         {soloProjects.map((pro) => (
-          <article className="portfolio__item " key={pro.id}>
+          <article className="portfolio__item "  key={pro.id}>
             <div className="portfolio__item-image">
               <img src={pro.img} alt={pro.title} />
             </div>

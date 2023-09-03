@@ -4,10 +4,20 @@ import IMG2 from '../../assets/tseamcet.jpeg';
 import IMG3 from '../../assets/jee.jpeg';
 import IMG4 from '../../assets/chaitanyaKreeda.jpeg';
 import IMG5 from '../../assets/hackerank.png';
+import IMG6 from '../../assets/cfg.jpeg';
 import './achievements.css';
 
 const Achievements = () => {
   const achievements = [
+    {
+      id: 6,
+      title: 'JPMC codeForGood 2023',
+      subtitle: "Shortlisted and participated in JPMC Code for Good hackathon 2023",
+      img: IMG6,
+      link: "",
+      linkName : '',
+
+    },
     {
       id: 1,
       title: 'LEETCODE',
