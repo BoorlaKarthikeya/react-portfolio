@@ -25,7 +25,12 @@ const Header = () => {
                       .pauseFor(300)
                       .deleteChars(21)
                       .typeString(
-                        `<h1>Life Long Learner.</h1>`
+                        `<span className = "profession">AIML Enthusiast.</span>`
+                      )
+                      .pauseFor(300)
+                      .deleteChars(21)
+                      .typeString(
+                        `<span className = "profession">Life Long Learner.</span>`
                       )
                       .pauseFor(1000)
                       .start();

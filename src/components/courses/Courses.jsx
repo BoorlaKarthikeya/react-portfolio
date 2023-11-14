@@ -1,11 +1,27 @@
 import React from 'react';
 import IMG1 from '../../assets/oracle.jpg';
 import IMG2 from '../../assets/swayam.png';
+import IMG3 from '../../assets/cloud-computing-google.jpg';
+import IMG4 from '../../assets/machine_learning.jpg';
 
 import './courses.css';
 
 const courses = () => {
   const course = [
+    {
+      id: 5,
+      title: 'Machine learning Specialization - Coursera (Andrew NG)',
+      img: IMG4,
+      link: "https://coursera.org/share/b877b4df1226c4ebb7c6bba32758c190",
+
+    },
+    {
+      id: 4,
+      title: 'Google Cloud Computing Foundations and Generative AI Arcade Game',
+      img: IMG3,
+      link: "https://www.cloudskillsboost.google/public_profiles/4be8e0c8-981a-40a3-8314-144bdfb4dd58",
+
+    },
     {
       id: 1,
       title: 'Oracle Certified Associate , Java SE 8 Programmer',
@@ -36,7 +52,7 @@ const courses = () => {
   return (
     <section id="course">
 
-      <h2>Courses</h2>
+      <h2>Courses / certifications</h2>
 
       <div className="container course__container">
         {course.map((pro) => (

@@ -5,6 +5,7 @@ import IMG1 from '../../assets/elc.jpeg';
 import IMG2 from '../../assets/cosc.png';
 import IMG3 from '../../assets/NN.jpg';
 import IMG4 from '../../assets/hackiton.jpeg';
+import IMG5 from '../../assets/gdsc.png';
 import './work.css';
 
 
@@ -16,6 +17,23 @@ return(
         <div id='work' >
         <h3 >Experience </h3></div>
 <VerticalTimeline>
+<VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+    date="OCT 2023 - present"
+    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    icon={<img  className = "experienceImg" src={IMG5} />}
+  >
+    <h3 className="vertical-timeline-element-title">Core Team Leader</h3>
+    <h2 className="vertical-timeline-element-subtitle">Google Developers Studnet Club (CBIT)</h2>
+    <div>
+        <ul>
+    <li>⚡Google Developer Student Clubs (GDSC) are university-based community groups for students interested in Google developer technologies and programming. There are GDSCs in over 110 countries around the world.</li><li>⚡GDSCs are student-led communities that focus on learning and collaboration in the field of technology, specifically Google technologies. Students learn, share ideas, and come up with projects that are likely to solve day-to-day problems.</li></ul>
+    </div>
+    
+
+  </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
@@ -37,7 +55,7 @@ return(
     className="vertical-timeline-element--work"
     contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-    date="JAN 2023 - present"
+    date="JAN 2023 - SEP 2023"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={<img className = "experienceImg" src={IMG2} />}
   >
