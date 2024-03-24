@@ -21,7 +21,7 @@ const Achievements = () => {
     {
       id: 1,
       title: 'LEETCODE',
-      subtitle: "Solved 350+ problems on Leetcode",
+      subtitle: "Solved 430+ problems on Leetcode",
       img: IMG1,
       link: "https://leetcode.com/KarthikeyaBoorla/",
       linkName : 'Profile',

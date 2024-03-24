@@ -3,6 +3,8 @@ import IMG1 from '../../assets/oracle.jpg';
 import IMG2 from '../../assets/swayam.png';
 import IMG3 from '../../assets/cloud-computing-google.jpg';
 import IMG4 from '../../assets/machine_learning.jpg';
+import IMG5 from '../../assets/aicte.jpeg';
+import IMG6 from '../../assets/infosys.png';
 
 import './courses.css';
 
@@ -10,9 +12,23 @@ const courses = () => {
   const course = [
     {
       id: 5,
-      title: 'Machine learning Specialization - Coursera (Andrew NG)',
-      img: IMG4,
-      link: "https://coursera.org/share/b877b4df1226c4ebb7c6bba32758c190",
+      title: 'AICTE IdeaLab Internship - CBIT',
+      img: IMG5,
+      link: "https://drive.google.com/file/d/1A5qgGxGC_vVwAoRO3j5v5fTbuvxI5Fn2/view?usp=sharing",
+
+    },
+    {
+      id: 5,
+      title: 'Introduction to Data Science',
+      img: IMG6,
+      link: "https://drive.google.com/file/d/1j5KOnZAIa5caiK4XbjwnG9vPv8loabZ9/view?usp=sharing",
+
+    },
+    {
+      id: 5,
+      title: 'Introduction to Internet of Things - NPTEL',
+      img: IMG2,
+      link: "https://drive.google.com/file/d/15XRsbuas-yLMTaQ9SKdklnzsyOko1Mhl/view?usp=sharing",
 
     },
     {
