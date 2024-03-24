@@ -10,7 +10,7 @@ const education = () => {
     {
       id: 1,
       title: 'Chaitanya Bharathi institute of technology (2021 -2025)',
-      subtitle: "Computer Science Engineering (CSE)",
+      subtitle: "Computer Science and Engineering (CSE)",
       img: IMG1,
       description:
       "⚡ I have taken variety of courses related to  Full stack development ,Data Structures and Algorithms , Object Oriented Programming etc. Apart from this, I have done courses on cryptography , Network Security and Ethical Hacking.",

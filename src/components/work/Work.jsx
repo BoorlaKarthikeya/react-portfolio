@@ -38,7 +38,7 @@ const Work = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-          date="OCT 2022 - present"
+          date="OCT 2022 - DEC 2023"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<img className="experienceImg" src={IMG1} />}
         >
@@ -73,7 +73,7 @@ const Work = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-          date="FEB 2023 - present"
+          date="FEB 2023 - DEC 2023"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<img className="experienceImg" src={IMG3} />}
         >
@@ -89,7 +89,7 @@ const Work = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-          date="MAY 2023 - present"
+          date="MAY 2023 - NOV 2023"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<img className="experienceImg" src={IMG4} />}
         >
