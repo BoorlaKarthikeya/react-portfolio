@@ -8,11 +8,22 @@ import IMG6 from '../../assets/clock.jpeg';
 import IMG7 from '../../assets/parallax.jpeg';
 import IMG8 from '../../assets/devLanding.png';
 import IMG9 from '../../assets/lms.jpeg';
+import IMG10 from '../../assets/t20.jpeg';
 
 import './portfolio.css';
 
 const Portfolio = () => {
   const soloProjects = [
+    {
+      id: 10,
+      title: 'DYNAMIC T20 MATCH ANALYSIS: predicting winning probabilities and match scores',
+      img: IMG10,
+      description:
+      "Developed a dynamic T20 match analysis system using logistic regression and XGBoost regression for predicting winning probabilities and match scores in cricket matches. ",
+      technologies: 'numpy | pandas | scikit-learn | streamlit | feature engineering',
+      link: 'https://t20-score-win-predictor-karthikeya.streamlit.app/',
+      github: 'https://github.com/BoorlaKarthikeya/T20_score_win_predictor',
+    },
     {
       id: 9,
       title: 'Library Management System',
