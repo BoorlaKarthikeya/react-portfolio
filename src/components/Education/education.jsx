@@ -14,7 +14,7 @@ const education = () => {
       img: IMG1,
       description:
       "⚡ I have taken variety of courses related to  Full stack development ,Data Structures and Algorithms , Object Oriented Programming etc. Apart from this, I have done courses on cryptography , Network Security and Ethical Hacking.",
-      grade: 'CGPA : 9.4',
+      grade: 'CGPA : 9.2',
       link: "https://www.cbit.ac.in/",
 
     },
