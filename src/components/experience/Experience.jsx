@@ -67,9 +67,90 @@ const Experience = () => {
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Git/GitHub</h4>
+              <h4>SQL</h4>
             </article>
           </div>
+        </div>
+        <div className="experience__frontend">
+          <h3>AIML</h3>
+          <div className="experience__content">
+          <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Numpy , pandas</h4>
+            </article>
+          <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>matplotlib , seaborn</h4>
+            </article>
+          <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Scikit-learn</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Tensorflow</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Artificial Neural Networks (ANN)</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Convolutional Neural Networks (CNN) </h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Recurrent Neural Networks (RNN)</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Natural Language Processing (NLP) </h4>
+            </article>
+            
+          </div>
+          </div>
+        <div className="experience__frontend">
+          <h3>Devops / Tools</h3>
+          <div className="experience__content">
+          <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Shell Scripting/ Bash</h4>
+            </article>
+          <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Amazon web services (AWS)</h4>
+            </article>
+          <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Git/Github</h4>
+            </article>
+          <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Jenkins</h4>
+            </article>
+          <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Docker</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Terraform</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Ansible</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Jira </h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Kubernetes</h4>
+            </article>
+            
+          
+        </div>
         </div>
       </div>
     </section>
