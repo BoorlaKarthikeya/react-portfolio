@@ -76,11 +76,15 @@ const Experience = () => {
           <div className="experience__content">
           <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Numpy , pandas</h4>
+              <h4>Numpy</h4>
             </article>
           <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>matplotlib , seaborn</h4>
+              <h4>pandas</h4>
+            </article>
+          <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>matplotlib</h4>
             </article>
           <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
@@ -92,19 +96,15 @@ const Experience = () => {
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Artificial Neural Networks (ANN)</h4>
+              <h4>Machine Learning</h4>
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Convolutional Neural Networks (CNN) </h4>
+              <h4>Deep Learning</h4>
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Recurrent Neural Networks (RNN)</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Natural Language Processing (NLP) </h4>
+              <h4>Natural Language Processing</h4>
             </article>
             
           </div>

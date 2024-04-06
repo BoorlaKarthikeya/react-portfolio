@@ -5,10 +5,20 @@ import IMG3 from '../../assets/jee.jpeg';
 import IMG4 from '../../assets/chaitanyaKreeda.jpeg';
 import IMG5 from '../../assets/hackerank.png';
 import IMG6 from '../../assets/cfg.jpeg';
+import IMG7 from '../../assets/SIH.jpeg';
 import './achievements.css';
 
 const Achievements = () => {
   const achievements = [
+    {
+      id: 7,
+      title: 'Smart India Hackathon 2023',
+      subtitle: "Got shortlisted for the Grand Finale of  one of Asia's largest Hackathon Smart India Hackthon 2023",
+      img: IMG7,
+      link: "",
+      linkName : '',
+
+    },
     {
       id: 6,
       title: 'JPMC codeForGood 2023',

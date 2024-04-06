@@ -6,6 +6,7 @@ import IMG2 from '../../assets/cosc.png';
 import IMG3 from '../../assets/NN.jpg';
 import IMG4 from '../../assets/hackiton.jpeg';
 import IMG5 from '../../assets/gdsc.png';
+import IMG6 from '../../assets/cbit.jpeg';
 import './work.css';
 
 
@@ -17,6 +18,23 @@ const Work = () => {
       <div id='work' >
         <h3 >Experience </h3></div>
       <VerticalTimeline>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+          date="FEB 2024 - present"
+          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          icon={<img className="experienceImg" src={IMG6} />}
+        >
+          <h3 className="vertical-timeline-element-title">Chief Placement Coordinator</h3>
+          <h2 className="vertical-timeline-element-subtitle">CBIT Training & placements</h2>
+          <div>
+            <ul>
+              <li>⚡As a placement coordinator, I'm dedicated to bridging the gap between students/job seekers and promising career opportunities. I build strong employer relationships, provide personalized counseling, and organize impactful events like job fairs. Tracking placement data helps me continually improve our services. Empowering individuals to achieve their career goals is immensely rewarding. Witnessing their success stories as they secure fulfilling positions is the highlight of my role.</li></ul>
+          </div>
+
+
+        </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
