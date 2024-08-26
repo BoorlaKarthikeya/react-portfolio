@@ -27,7 +27,10 @@
 .experience__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
+    grid-row-gap: 2rem;
+     grid-column-gap : 6rem; 
+    justify-content: space-around;
+    align-content: space-around;
 }
 
 .experience__details {

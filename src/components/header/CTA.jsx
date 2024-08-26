@@ -1,14 +1,21 @@
-import React from 'react';
-
+import React from "react";
+import { Button } from "../../componentsUi/ui/button";
+import { CoolMode } from "../../componentsUi/magicui/cool-mode";
 
 const CTA = () => {
   return (
     <div className="cta">
-      <a href="https://drive.google.com/file/d/17XZpa7crbRgpKtEoj-2DzAFuP4k39_c3/view?usp=sharing" download className="btn">
-        Download CV
+      <a
+        href="https://drive.google.com/file/d/1O-rNp7tRmfoWk3CYbqXpxEIKkK836hVl/view?usp=sharing"
+        download
+        className="btn"
+      >
+        <Button className="text-lg">My Resume</Button>
       </a>
-      <a href="#contact" className="btn btn-primary">
-        Let's talk
+      <a href="#contact" className=" btn btn-primary">
+        <CoolMode>
+          <Button className="text-lg">Let's Talk!!</Button>
+        </CoolMode>
       </a>
     </div>
   );

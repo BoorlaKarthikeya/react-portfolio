@@ -1,54 +1,51 @@
-import React from 'react';
-import IMG1 from '../../assets/cbit.jpeg';
-import IMG2 from '../../assets/srichaitanya.jpeg';
-import IMG3 from '../../assets/tswreis.jpeg';
+import React from "react";
+import { BorderBeam } from "../../componentsUi/magicui/border-beam";
+import IMG1 from "../../assets/cbit.jpeg";
+import IMG2 from "../../assets/srichaitanya.jpeg";
+import IMG3 from "../../assets/tswreis.jpeg";
 
-import './education.css';
+import "./education.css";
 
 const education = () => {
   const soloProjects = [
     {
       id: 1,
-      title: 'Chaitanya Bharathi institute of technology (2021 -2025)',
+      title: "Chaitanya Bharathi institute of technology (2021 -2025)",
       subtitle: "Computer Science and Engineering (CSE)",
       img: IMG1,
       description:
-      "⚡ I have taken variety of courses related to  Full stack development ,Data Structures and Algorithms , Object Oriented Programming etc. Apart from this, I have done courses on cryptography , Network Security and Ethical Hacking.",
-      grade: 'CGPA : 9.2',
+        "⚡ I have taken variety of courses related to  Full stack development ,Data Structures and Algorithms , Object Oriented Programming etc. Apart from this, I have done courses on cryptography , Network Security and Ethical Hacking.",
+      grade: "CGPA : 9.18",
       link: "https://www.cbit.ac.in/",
-
     },
     {
       id: 2,
-      title: 'Sri Chaitanya Junior college , DD colony , Hyderabad (2019 - 2021 )',
-      subtitle: "class : XII  Major: Science (Physics, Chemistry, Mathematics) ",
+      title:
+        "Sri Chaitanya Junior college , DD colony , Hyderabad (2019 - 2021 )",
+      subtitle:
+        "class : XII  Major: Science (Physics, Chemistry, Mathematics) ",
       img: IMG2,
       description:
-      "⚡ I have studied to secure admission in a prestigious engineering institution by utilizing my strong foundation in Physics, Chemistry, and Mathematics and the training received for the Joint Entrance Examination (JEE).",
-      grade: 'Grade : 98%',
+        "⚡ I have studied to secure admission in a prestigious engineering institution by utilizing my strong foundation in Physics, Chemistry, and Mathematics and the training received for the Joint Entrance Examination (JEE).",
+      grade: "Grade : 98%",
       link: "https://srichaitanya.net/",
-
     },
     {
       id: 3,
-      title: "Telangana Social Welfare Residential School , Shaikpet , Hyderabad (2017 - 2019)",
+      title:
+        "Telangana Social Welfare Residential School , Shaikpet , Hyderabad (2017 - 2019)",
       subtitle: "Class : X",
       img: IMG3,
       description:
-      "⚡TSWRS (shaikpet Hyderabad) is a reputable educational institution dedicated to providing a high-quality learning environment for students. With a focus on academic excellence, character development, and holistic growth, our school strives to nurture students into well-rounded individuals equipped with the skills and knowledge necessary for success in the modern world.",
-      grade: 'CGPA : 9.7',
+        "⚡TSWRS (shaikpet Hyderabad) is a reputable educational institution dedicated to providing a high-quality learning environment for students. With a focus on academic excellence, character development, and holistic growth, our school strives to nurture students into well-rounded individuals equipped with the skills and knowledge necessary for success in the modern world.",
+      grade: "CGPA : 9.7",
       link: "https://www.cbit.ac.in/",
-
     },
-    
-    
   ];
 
   return (
     <section id="education">
-
-      <h2>My Education</h2>
-
+      <h2 className="text-3xl">My Education</h2>
       <div className="container education__container">
         {soloProjects.map((pro) => (
           <article className="education__item  " key={pro.id}>
