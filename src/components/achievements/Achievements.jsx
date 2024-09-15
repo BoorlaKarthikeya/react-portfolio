@@ -93,7 +93,9 @@ const Achievements = () => {
 
   return (
     <section id="Achievements">
-      <h2>Achievements</h2>
+      <div id="work">
+        <h3>Achievements</h3>
+      </div>
 
       <div className="container course__container">
         {achievements.map((pro) => (

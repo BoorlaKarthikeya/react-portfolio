@@ -132,22 +132,22 @@ const Experience = () => {
               <BsFillPatchCheckFill className="experience__details-icon" />
               <h4>Docker</h4>
             </article>
-            <article className="experience__details">
+            {/* <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
               <h4>Terraform</h4>
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
               <h4>Ansible</h4>
-            </article>
+            </article> */}
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
               <h4>Jira </h4>
             </article>
-            <article className="experience__details">
+            {/* <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
               <h4>Kubernetes</h4>
-            </article>
+            </article> */}
           </div>
         </div>
       </div>

@@ -10,13 +10,51 @@ import IMG8 from "../../assets/devLanding.png";
 import IMG9 from "../../assets/lms.jpeg";
 import IMG10 from "../../assets/t20.jpeg";
 import IMG11 from "../../assets/ATS.jpeg";
+import IMG12 from "../../assets/eda.png";
+import IMG13 from "../../assets/da.jpeg";
+import IMG14 from "../../assets/cnn.jpeg";
 import { NeonGradientCard } from "../../componentsUi/magicui/neon-gradient-card";
 import "./portfolio.css";
 
 const Portfolio = () => {
   const soloProjects = [
     {
-      id: 1,
+      id: 14,
+      title: "Emotion Detection using CNN",
+      img: IMG14,
+      description:
+        "Developed an intelligent system to predict suitable job roles based on resume keywords, enhancing the job application process. Implemented ATS score generation by comparing resumes with job descriptions, optimizing content for specific roles by highlighting missing keywords. ",
+      technologies:
+        "python | tensorflow | opencv | matplotlib | data augmentation | transfer learning ",
+      link: "",
+      github:
+        "https://github.com/BoorlaKarthikeya/Emotion-detection-CNN/tree/main",
+    },
+    {
+      id: 12,
+      title: "Exploratory Data Analysis (EDA) on FIFA World Cup data",
+      img: IMG12,
+      description:
+        "Conducted in-depth Exploratory Data Analysis (EDA) on FIFA World Cup data to extract key insights into team performances and match strategies, supported by dynamic visualizations using Python libraries.",
+      technologies:
+        "python | numpy | pandas | matplotlib | seaborn | plotly | data analysis | streamlit",
+      link: "",
+      github: "https://github.com/BoorlaKarthikeya/EDA_fifaWorldCup",
+    },
+    {
+      id: 13,
+      title:
+        "Data Analysis of Russian Military Losses During Ukraine-Russia War",
+      img: IMG13,
+      description:
+        "Performed detailed analysis of Russian military losses during the Ukraine-Russia war, using Python to extract trends from raw data and visualize troop and equipment losses for enhanced decision-making.",
+      technologies:
+        "python | numpy | pandas | matplotlib | plotly | data analysis | streamlit",
+      link: "https://russiawaranalysis-karthikeyaboorla.streamlit.app/",
+      github: "https://github.com/BoorlaKarthikeya/RussiaWarAnalysis/tree/main",
+    },
+    {
+      id: 11,
       title: "Resume Application Tracking System",
       img: IMG11,
       description:
@@ -27,6 +65,7 @@ const Portfolio = () => {
       github:
         "https://github.com/BoorlaKarthikeya/ResumeApplicationTrackingSystem",
     },
+
     {
       id: 10,
       title:
@@ -140,7 +179,9 @@ const Portfolio = () => {
   return (
     <section id="portfolio">
       <h5>My Recent Work</h5>
-      <h2>Projects</h2>
+      <div id="work">
+        <h3>Projects</h3>
+      </div>
 
       <div className="container portfolio__container">
         {soloProjects.map((pro) => (
