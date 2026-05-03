@@ -49,7 +49,7 @@ const Education = () => {
         {soloProjects.map((pro) => (
           <article className="education__item  " key={pro.id}>
             <div className="education__item-image">
-              <img src={pro.img} alt={pro.title} />
+              <img src={pro.img} alt={pro.title} loading="lazy" />
             </div>
             <div className="education__item-content">
               <h3>{pro.title}</h3>
