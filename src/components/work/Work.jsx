@@ -36,8 +36,8 @@ const Work = () => {
               />
             }
           >
-            <h3 className="vertical-timeline-element-title" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: "1.25rem" }}>{item.title}</h3>
-            <h4 className="vertical-timeline-element-subtitle" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 500, fontSize: "0.95rem", color: "#1a1a2e" }}>{item.company}</h4>
+            <h3 className="vertical-timeline-element-title" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 500, fontSize: "1rem", marginBottom: "0.25rem" }}>{item.title}</h3>
+            <h4 className="vertical-timeline-element-subtitle" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: "1.3rem", color: "#1a1a2e", marginBottom: "0.75rem" }}>{item.company}</h4>
             <ul>
               {item.bullets.map((bullet, i) => (
                 <li key={i}>⚡ {bullet}</li>

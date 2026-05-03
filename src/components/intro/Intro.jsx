@@ -1,5 +1,5 @@
 import React from "react";
-import ME from "../../assets/karthikeyaProfile2.jpg";
+import ME from "../../assets/KarthikeyaProfile.jpeg";
 import "./intro.css";
 
 const Intro = () => {
