@@ -10,35 +10,29 @@ const Intro = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="me" />
+            <img src={ME} alt="Karthikeya Boorla — Software Engineer" loading="lazy" />
           </div>
         </div>
         <div className="about__content">
           <p>
-            I am a final-year Computer Science and Engineering undergraduate at
-            Chaitanya Bharathi Institute of Technology. My passion lies in
-            developing applications that create meaningful impact in the real
-            world.
+            Software Engineer at Salesforce, building AI-powered internal tools
+            with Agentforce, RAG pipelines, and LLM agent systems. Previously
+            a Software Engineer Intern at Qualcomm, where I worked on scalable
+            ETL pipelines for semiconductor manufacturing and improved backend
+            test coverage from 0% to ~70%.
           </p>
           <p>
-            I am a highly motivated and detail-oriented individual with a robust
-            foundation in programming languages such as Java, Python, and C.
-            Proficient in software development methodologies like Agile, I also
-            have hands-on experience in frontend developmental tools. My
-            expertise lies in MERN stack development, along with proficiency in
-            Django.
+            I hold a B.E. in Computer Science from Chaitanya Bharathi Institute
+            of Technology (CGPA: 9.18). My passion lies in building applications
+            that create real-world impact — from AI agent systems and full-stack
+            web products to data-driven ML solutions.
           </p>
           <p>
-            In addition to my programming skills, I excel in machine learning
-            and deep learning, utilizing frameworks like scikit-learn and
-            TensorFlow. With expertise in natural language processing, I craft
-            intelligent solutions adept at understanding human language
-            patterns. Moreover, I am proficient in cloud computing, boasting
-            hands-on experience with Google Cloud Computing and Amazon Web
-            Services (AWS). My skill set extends to various DevOps tools,
-            ensuring seamless integration and deployment of models. Furthermore,
-            I possess a strong understanding of different types of networks,
-            enhancing my ability to tackle diverse challenges efficiently.
+            I'm a full-stack engineer comfortable across React, Node.js, Django,
+            Spring Boot, and Salesforce platform (Apex, LWC). On the AI side,
+            I work with LangGraph, LangChain, RAG architectures, and agentic
+            workflows. I thrive in fast-moving teams where I can own features
+            end to end.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk

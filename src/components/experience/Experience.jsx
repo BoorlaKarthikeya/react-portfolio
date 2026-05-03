@@ -5,9 +5,10 @@ import "./experience.css";
 
 const SECTION_LABELS = {
   frontend: "Front-end Development",
-  backend: "Back-end Development",
-  aiml: "AIML",
-  devops: "Devops / Tools",
+  backend: "Back-end / Databases",
+  salesforce: "Salesforce Platform",
+  aiml: "AI / ML",
+  devops: "DevOps / Tools",
 };
 
 const Experience = () => {

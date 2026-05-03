@@ -40,6 +40,13 @@ export { default as narendharImg } from "../assets/narendhar.jpg";
 export { default as bhanuprasadImg } from "../assets/bhanuprasad.jpeg";
 export { default as nishanthImg } from "../assets/nishanth.jpeg";
 
+// Experience logos
+export { default as qualcommLogo } from "../assets/portfolio.png"; // TODO: replace with qualcomm.png
+
+// Project screenshots (placeholders — replace with actual screenshots)
+export { default as aiAgentImg } from "../assets/portfolio.png"; // TODO: replace with ai_agent_screenshot.png
+export { default as uberCloneImg } from "../assets/portfolio.png"; // TODO: replace with uber_clone_screenshot.png
+
 // Projects
 export { default as newsImg } from "../assets/news.jpeg";
 export { default as tictactoeImg } from "../assets/tictactoe.jpeg";
