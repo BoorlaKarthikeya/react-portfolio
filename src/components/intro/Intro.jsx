@@ -2,6 +2,13 @@ import React from "react";
 import ME from "../../assets/KarthikeyaProfile.jpeg";
 import "./intro.css";
 
+const STATS = [
+  { value: "9.18", label: "CGPA" },
+  { value: "800+", label: "LeetCode" },
+  { value: "2+", label: "Internships" },
+  { value: "10+", label: "Projects" },
+];
+
 const Intro = () => {
   return (
     <section id="about">
@@ -14,6 +21,14 @@ const Intro = () => {
           </div>
         </div>
         <div className="about__content">
+          <div className="about__stats">
+            {STATS.map(({ value, label }) => (
+              <div key={label} className="about__stat-card">
+                <h3>{value}</h3>
+                <small>{label}</small>
+              </div>
+            ))}
+          </div>
           <p>
             Software Engineer at Salesforce, building AI-powered internal tools
             with Agentforce, RAG pipelines, and LLM agent systems. Previously
@@ -23,16 +38,10 @@ const Intro = () => {
           </p>
           <p>
             I hold a B.E. in Computer Science from Chaitanya Bharathi Institute
-            of Technology (CGPA: 9.18). My passion lies in building applications
-            that create real-world impact — from AI agent systems and full-stack
-            web products to data-driven ML solutions.
-          </p>
-          <p>
-            I'm a full-stack engineer comfortable across React, Node.js, Django,
-            Spring Boot, and Salesforce platform (Apex, LWC). On the AI side,
-            I work with LangGraph, LangChain, RAG architectures, and agentic
-            workflows. I thrive in fast-moving teams where I can own features
-            end to end.
+            of Technology (CGPA: 9.18). I'm a full-stack engineer comfortable
+            across React, Node.js, Spring Boot, and Salesforce platform. On the
+            AI side, I work with LangGraph, LangChain, RAG architectures, and
+            agentic workflows.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
