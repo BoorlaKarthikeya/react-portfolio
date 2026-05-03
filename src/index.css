@@ -11,17 +11,16 @@
 }
 
 :root {
-  /* ── Palette ── */
-  --color-bg: #0f0e17;
-  --color-bg-variant: #1a1a2e;
-  --color-surface: #16213e;
-  --color-primary: #7c3aed;
-  --color-primary-light: #a78bfa;
-  --color-primary-variant: rgba(124, 58, 237, 0.25);
-  --color-accent: #06b6d4;
-  --color-white: #f8f8ff;
-  --color-light: rgba(248, 248, 255, 0.55);
-  --color-muted: rgba(248, 248, 255, 0.35);
+  /* ── Palette (original blue theme) ── */
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color-surface: #252550;
+  --color-primary: #4db5ff;
+  --color-primary-light: #74c7ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+  --color-muted: rgba(255, 255, 255, 0.35);
 
   /* ── Typography ── */
   --font-body: 'Inter', sans-serif;
@@ -29,7 +28,7 @@
   --font-mono: 'JetBrains Mono', monospace;
 
   /* ── Motion ── */
-  --transition: all 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: all 400ms ease;
   --transition-fast: all 200ms ease;
 
   /* ── Layout ── */
@@ -38,8 +37,7 @@
   --container-width-sm: 90%;
 
   /* ── Shadows / Glow ── */
-  --glow-primary: 0 0 20px rgba(124, 58, 237, 0.35);
-  --glow-accent: 0 0 20px rgba(6, 182, 212, 0.3);
+  --glow-primary: 0 0 20px rgba(77, 181, 255, 0.35);
   --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
 
@@ -138,21 +136,20 @@ a:hover {
 }
 
 .btn:hover {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  border-color: var(--color-primary);
-  box-shadow: var(--glow-primary);
+  background-color: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
 }
 
 .btn-primary {
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-bg);
   border-color: var(--color-primary);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-primary-light);
-  border-color: var(--color-primary-light);
+  background-color: var(--color-white);
+  border-color: transparent;
   color: var(--color-bg);
 }
 
