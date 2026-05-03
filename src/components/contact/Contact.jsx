@@ -1,28 +1,10 @@
-import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
+import React from 'react';
 import { MdOutlineEmail } from 'react-icons/md';
+import useContactForm from '../../hooks/useContactForm';
 import './contact.css';
 
 const Contact = () => {
-  const [status, setStatus] = useState('idle'); // 'idle' | 'loading' | 'success' | 'error'
-  const formRef = useRef();
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus('loading');
-    try {
-      await emailjs.sendForm(
-        'service_ac9dhm5',
-        'template_zuzrjwi',
-        formRef.current,
-        'ahRzRP_DbaUrC5ZIS',
-      );
-      setStatus('success');
-      formRef.current.reset();
-    } catch {
-      setStatus('error');
-    }
-  };
+  const { formRef, status, handleSubmit } = useContactForm();
 
   return (
     <section id="contact">
