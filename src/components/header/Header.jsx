@@ -1,7 +1,7 @@
 import React from "react";
 import CTA from "./CTA";
 import HeaderSocials from "./HeaderSocials";
-import ME from "../../assets/KarthikeyaProfile.jpeg";
+import ME from "../../assets/karthikeyaHeroImage.png";
 import { BorderBeam } from "../../componentsUi/magicui/border-beam";
 import Typewriter from "typewriter-effect";
 import "./header.css";

@@ -1,11 +1,12 @@
 // Profile
-export { default as profileImg } from "../assets/KarthikeyaProfile.jpeg";
+export { default as profileImg } from "../assets/karthikeyaHeroImage.png";
 
 // Experience logos
 export { default as cbitLogo } from "../assets/cbit.jpeg";
 export { default as salesforceLogo } from "../assets/salesforce.png";
 export { default as gdscLogo } from "../assets/gdsc.png";
 export { default as coscLogo } from "../assets/cosc.png";
+export { default as qualcommLogo } from "../assets/qualcomm.png";
 
 // Education
 export { default as srichaitanyaImg } from "../assets/srichaitanya.jpeg";
@@ -40,25 +41,20 @@ export { default as narendharImg } from "../assets/narendhar.jpg";
 export { default as bhanuprasadImg } from "../assets/bhanuprasad.jpeg";
 export { default as nishanthImg } from "../assets/nishanth.jpeg";
 
-// Experience logos
-export { default as qualcommLogo } from "../assets/portfolio.png"; // TODO: replace with qualcomm.png
-
-// Project screenshots (placeholders — replace with actual screenshots)
-export { default as aiAgentImg } from "../assets/portfolio.png"; // TODO: replace with ai_agent_screenshot.png
-export { default as uberCloneImg } from "../assets/portfolio.png"; // TODO: replace with uber_clone_screenshot.png
-
 // Projects
-export { default as newsImg } from "../assets/news.jpeg";
+export { default as aiAgentImg } from "../assets/EcommerceCustomerBot.png";
+export { default as uberCloneImg } from "../assets/uberClone.png";
+export { default as cnnImg } from "../assets/emotionDetection.png";
+export { default as atsImg } from "../assets/atsScore.png";
+export { default as t20Img } from "../assets/T20_analysis.png";
+export { default as edaImg } from "../assets/EDA_fifa.png";
+export { default as daImg } from "../assets/russia_ukrainse_war_dashboard.png";
+export { default as lmsImg } from "../assets/library_management_system.png";
+export { default as newsImg } from "../assets/headlineHub.png";
+export { default as portfolioImg } from "../assets/react_portfolio.png";
 export { default as tictactoeImg } from "../assets/tictactoe.jpeg";
-export { default as portfolioImg } from "../assets/portfolio.png";
 export { default as canteenbillImg } from "../assets/canteenbill.jpeg";
 export { default as calculatorImg } from "../assets/claculator.jpeg";
 export { default as clockImg } from "../assets/clock.jpeg";
 export { default as parallaxImg } from "../assets/parallax.jpeg";
 export { default as devLandingImg } from "../assets/devLanding.png";
-export { default as lmsImg } from "../assets/lms.jpeg";
-export { default as t20Img } from "../assets/t20.jpeg";
-export { default as atsImg } from "../assets/ATS.jpeg";
-export { default as edaImg } from "../assets/eda.png";
-export { default as daImg } from "../assets/da.jpeg";
-export { default as cnnImg } from "../assets/cnn.jpeg";

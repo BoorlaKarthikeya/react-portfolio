@@ -1,0 +1,146 @@
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{fontawesome}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{color}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\newcommand{\resumeSubheading}[4]{
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeItem}[1]{
+\item\small{#1}
+}
+
+\begin{document}
+
+%----------HEADING-----------------
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{\LARGE Karthikeya Boorla} & Email: \href{mailto:karthikeyaboorla2004@gmail.com}{karthikeyaboorla2004@gmail.com}\\
+\href{https://github.com/BoorlaKarthikeya}{GitHub} \faExternalLink \quad
+\href{https://www.linkedin.com/in/boorla-karthikeya/}{LinkedIn} \faExternalLink \quad
+\href{https://react-portfolio-boorlakarthikeya.vercel.app/}{Portfolio} \faExternalLink
+& Mobile: +91-8519915714 \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+
+\section{Experience}
+
+\resumeSubheading
+{Salesforce}{Hyderabad, India}
+{Associate Member of Technical Staff}{Jun 2025 -- Present}
+
+\begin{itemize}[leftmargin=*, itemsep=-2pt]
+
+\resumeItem{Designed and deployed an \textbf{AI-powered internal support agent} using RAG pipelines over enterprise policy documentation, serving \textbf{1.4M employees globally} and deflecting \textbf{30\% of support tickets}, saving an estimated \textbf{12,000+ support-hours per quarter}.}
+
+\resumeItem{Architected a \textbf{Slack-based conversational interface} using Slack Bolt SDK and Block Kit UI, reducing average policy query resolution time from \textbf{2 days to under 2 minutes} for employees across 20+ global offices.}
+
+\resumeItem{Built \textbf{distributed event-driven analytics pipelines} using Google Analytics and internal telemetry to track agent adoption and feature usage across 50K+ monthly sessions, enabling data-driven iteration on 3 major feature releases.}
+
+\resumeItem{Owned production deployment and on-call monitoring of \textbf{microservices handling 100K+ daily requests}, maintaining \textbf{99.9\% uptime} across a Java/Spring Boot/PostgreSQL backend.}
+
+\resumeItem{\textbf{Tech Stack:} Java, Spring Boot, TypeScript, Node.js, PostgreSQL, REST APIs, Slack APIs, Docker}
+
+\end{itemize}
+
+\vspace{2pt}
+
+\resumeSubheading
+{Qualcomm}{Hyderabad, India}
+{Software Engineer Intern}{Jan 2025 -- Jun 2025}
+
+\begin{itemize}[leftmargin=*, itemsep=-2pt]
+
+\resumeItem{Extended a \textbf{scalable ETL platform} processing semiconductor design artifacts across 4 manufacturing stages (design, synthesis, fabrication, testing), reducing cross-vendor file exchange latency by \textbf{40\%} for 15+ vendor integrations.}
+
+\resumeItem{Onboarded support for \textbf{3 additional engineering file formats} (GDSII, DEF, LEF), eliminating manual data conversion workflows and saving engineers an estimated \textbf{8 hours per release cycle}.}
+
+\resumeItem{Increased backend microservice test coverage from \textbf{0\% to 70\%} using JUnit and Mockito, enabling CI gate enforcement and reducing production regression incidents by \textbf{60\%}.}
+
+\resumeItem{\textbf{Tech Stack:} Java, Spring Boot, MySQL, Docker, AWS, JUnit, Mockito}
+
+\end{itemize}
+
+%-----------PROJECTS-----------------
+
+\section{Projects}
+
+\textbf{AI Customer Support Agent — Tool-Augmented LLM System}
+\hfill \href{https://github.com/BoorlaKarthikeya/E-commerce_CustomerAgent_with_tools}{GitHub} $|$
+\href{https://www.linkedin.com/posts/boorla-karthikeya_aiengineering-llm-agentsystems-activity-7433823933877096448-Lrur}{Demo} \\
+\textit{LangGraph, LangChain, Python, SQLite, RAG, MCP, Streamlit}
+\begin{itemize}[leftmargin=*, itemsep=-2pt]
+\resumeItem{Engineered a \textbf{production-style LangGraph state machine} with intent routing across 6 agent nodes (order management, RAG policy lookup, fraud detection, recommendations), resolving 95\%+ of query categories autonomously.}
+\resumeItem{Built a \textbf{RAG pipeline} using vector embeddings and semantic search, grounding agent responses on 500+ policy documents and reducing hallucination rate by an estimated \textbf{80\%} vs. vanilla LLM.}
+\resumeItem{Designed a \textbf{config-driven LLM abstraction layer} (YAML) enabling hot-swappable provider backends — OpenAI, Gemini, Ollama, Grok — with zero code changes, reducing model migration effort by \textbf{90\%}.}
+\resumeItem{Integrated \textbf{Model Context Protocol (MCP)} enabling plug-and-play tool interoperability across 5+ external services.}
+\end{itemize}
+
+\vspace{2pt}
+
+\textbf{Uber Clone — Real-Time Ride-Hailing Platform}
+\hfill \href{https://github.com/BoorlaKarthikeya/UberClone_MERN}{GitHub} \\
+\textit{React, Redux, Node.js, Express, MongoDB, Socket.IO, JWT, Google Maps API}
+\begin{itemize}[leftmargin=*, itemsep=-2pt]
+\resumeItem{Architected a \textbf{real-time ride-hailing system} with WebSocket-based location tracking via Socket.IO, sustaining \textbf{500+ concurrent rider/driver sessions} with sub-200ms location update latency.}
+\resumeItem{Implemented \textbf{JWT authentication}, role-separated flows (rider/driver), fare estimation engine, and Google Maps geocoding/routing, delivering end-to-end booking lifecycle in under 3 seconds.}
+\end{itemize}
+
+%-----------SKILLS-----------------
+
+\section{Technical Skills}
+
+\textbf{Languages:} Java, Python, JavaScript, TypeScript, SQL, C \\
+\textbf{Backend \& Systems:} Node.js, Spring Boot, REST APIs, Microservices, System Design, Event-Driven Architecture \\
+\textbf{AI / LLM:} LangGraph, LangChain, LlamaIndex, RAG Pipelines, LLM Agents, MCP, Hugging Face, TensorFlow \\
+\textbf{Databases:} PostgreSQL, MySQL, MongoDB, Redis \\
+\textbf{Tools \& Infra:} Docker, AWS, Git, CI/CD, Jenkins, Linux \\
+
+%-----------ACHIEVEMENTS-----------------
+
+\section{Achievements}
+
+\begin{itemize}[leftmargin=*, itemsep=-2pt]
+\resumeItem{Solved \textbf{800+ problems on LeetCode} (top 8\% globally); consistent rating of \textbf{1750+ on Codeforces}.}
+\resumeItem{Published research on \textbf{Electric Vehicles \& Smart Grid} at the \textbf{15th IEEE International Conference on Recent Engineering and Technology}.}
+\resumeItem{Shortlisted for the \textbf{Grand Finale of Smart India Hackathon 2023} — among top 0.5\% of 500K+ participants.}
+\resumeItem{Secured \textbf{1st place} at CBIT 5th Research Day 2023 (research paper presentation, 80+ competing teams).}
+\end{itemize}
+
+%-----------EDUCATION-----------------
+
+\section{Education}
+
+\resumeSubheading
+{Chaitanya Bharathi Institute of Technology}{Hyderabad, India}
+{B.E. Computer Science and Engineering $|$ GPA: \textbf{9.18 / 10} (top 5\% of graduating class)}{2021 -- 2025}
+
+\end{document}
