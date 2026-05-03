@@ -1,5 +1,5 @@
 // Profile
-export { default as profileImg } from "../assets/karthikeyaHeroImage.png";
+export { default as profileImg } from "../assets/KarthikeyaProfile.jpeg";
 
 // Experience logos
 export { default as cbitLogo } from "../assets/cbit.jpeg";
