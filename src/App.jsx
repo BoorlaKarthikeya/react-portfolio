@@ -11,25 +11,25 @@ import Courses from './components/courses/Courses';
 import Topbar from './components/topbar/Topbar';
 import Achievements from './components/achievements/Achievements';
 import Work from './components/work/Work';
-
+import FadeIn from './components/shared/FadeIn';
 
 const App = () => {
   return (
     <>
       <Header />
       <Topbar />
-      <Intro />
-      <Experience />
-      <Education/>
-      <Courses/>
-      <Achievements/>
-      <Work/>
-      <Portfolio/>
-      <Testimonials />
-      <Contact />
+      <FadeIn><Intro /></FadeIn>
+      <FadeIn delay={0.05}><Experience /></FadeIn>
+      <FadeIn delay={0.05}><Education /></FadeIn>
+      <FadeIn delay={0.05}><Courses /></FadeIn>
+      <FadeIn delay={0.05}><Achievements /></FadeIn>
+      <FadeIn delay={0.05}><Work /></FadeIn>
+      <FadeIn delay={0.05}><Portfolio /></FadeIn>
+      <FadeIn delay={0.05}><Testimonials /></FadeIn>
+      <FadeIn delay={0.05}><Contact /></FadeIn>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
