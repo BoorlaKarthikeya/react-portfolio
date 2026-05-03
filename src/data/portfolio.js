@@ -265,7 +265,7 @@ export const achievements = [
   {
     id: 1,
     title: "LeetCode",
-    subtitle: "Solved 430+ problems on LeetCode",
+    subtitle: "Solved 650+ problems on LeetCode",
     img: leetcodeImg,
     link: "https://leetcode.com/KarthikeyaBoorla/",
     linkName: "Profile",
@@ -479,8 +479,9 @@ export const skills = {
     "PostgreSQL", "MySQL", "MongoDB", "Microservices", "System Design",
   ],
   aiml: [
-    "LangGraph", "LangChain", "RAG Pipelines", "LLM Agents",
-    "TensorFlow", "Scikit-learn", "NumPy", "Pandas", "NLP",
+    "LangGraph", "LangChain", "LlamaIndex", "RAG Pipelines", "LLM Agents",
+    "Hugging Face", "LLM Fine-tuning", "LoRA / PEFT", "Astral",
+    "TensorFlow", "Scikit-learn", "NumPy", "Pandas", "NLP", "MCP",
   ],
   devops: [
     "AWS", "Docker", "Git", "CI/CD", "Jenkins", "Linux", "JUnit", "Mockito",
