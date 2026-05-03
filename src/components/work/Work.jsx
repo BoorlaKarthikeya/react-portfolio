@@ -7,9 +7,9 @@ import { experience } from "../../data/portfolio";
 import "./work.css";
 
 const TIMELINE_STYLE = {
-  content: { background: "var(--color-surface)", color: "var(--color-white)", border: "1px solid var(--color-primary-variant)", boxShadow: "var(--shadow-card)" },
-  contentArrow: { borderRight: "7px solid var(--color-primary-variant)" },
-  icon: { background: "var(--color-bg-variant)", border: "2px solid var(--color-primary)" },
+  content: { background: "rgb(33, 150, 243)", color: "#fff" },
+  contentArrow: { borderRight: "7px solid rgb(33, 150, 243)" },
+  icon: { background: "rgb(33, 150, 243)", color: "#fff" },
 };
 
 const Work = () => {

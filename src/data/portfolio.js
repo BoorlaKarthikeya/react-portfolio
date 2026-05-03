@@ -265,7 +265,7 @@ export const achievements = [
   {
     id: 1,
     title: "LeetCode",
-    subtitle: "Solved 650+ problems on LeetCode",
+    subtitle: "Solved 800+ problems on LeetCode",
     img: leetcodeImg,
     link: "https://leetcode.com/KarthikeyaBoorla/",
     linkName: "Profile",
