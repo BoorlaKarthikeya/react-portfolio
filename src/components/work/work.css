@@ -14,13 +14,15 @@
 
 .vertical-timeline-element-title {
     font-family: var(--font-heading) !important;
-    font-weight: 600 !important;
-    font-size: 1.1rem !important;
+    font-weight: 700 !important;
 }
 
 .vertical-timeline-element-subtitle {
     font-family: var(--font-heading) !important;
-    font-weight: 500 !important;
-    font-size: 0.95rem !important;
-    opacity: 0.9;
+    font-weight: 600 !important;
+}
+
+.vertical-timeline-element-content ul,
+.vertical-timeline-element-content li {
+    font-weight: 400 !important;
 }
