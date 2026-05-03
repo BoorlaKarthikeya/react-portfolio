@@ -1,3 +1,14 @@
+import type {
+  Profile,
+  ExperienceItem,
+  EducationItem,
+  Certification,
+  Achievement,
+  Project,
+  Skills,
+  Testimonial,
+} from '../types';
+
 import {
   cbitLogo,
   salesforceLogo,
@@ -41,7 +52,7 @@ import {
 
 // ─── PROFILE ────────────────────────────────────────────────────────────────
 
-export const profile = {
+export const profile: Profile = {
   name: "Karthikeya Boorla",
   tagline: "Software Engineer · AI Generalist · Full-Stack Developer",
   bio: "Software Engineer at Salesforce building AI-powered internal tools with Agentforce, RAG pipelines, and LLM agent systems. I'm passionate about developing applications that create meaningful real-world impact — from conversational AI to full-stack web products.",
@@ -54,7 +65,7 @@ export const profile = {
 
 // ─── EXPERIENCE ─────────────────────────────────────────────────────────────
 
-export const experience = [
+export const experience: ExperienceItem[] = [
   {
     id: 0,
     title: "Associate Member of Technical Staff",
@@ -135,7 +146,7 @@ export const experience = [
 
 // ─── EDUCATION ──────────────────────────────────────────────────────────────
 
-export const education = [
+export const education: EducationItem[] = [
   {
     id: 1,
     title: "Chaitanya Bharathi Institute of Technology (2021–2025)",
@@ -164,7 +175,7 @@ export const education = [
 
 // ─── CERTIFICATIONS ─────────────────────────────────────────────────────────
 
-export const certifications = [
+export const certifications: Certification[] = [
   {
     id: 1,
     title: "Oracle Certified Associate — Java SE 8 Programmer",
@@ -229,7 +240,7 @@ export const certifications = [
 
 // ─── ACHIEVEMENTS ────────────────────────────────────────────────────────────
 
-export const achievements = [
+export const achievements: Achievement[] = [
   {
     id: 10,
     title: "Published Research — Electric Vehicles & Smart Grid",
@@ -290,7 +301,7 @@ export const achievements = [
 
 // ─── TESTIMONIALS ─────────────────────────────────────────────────────────────
 
-export const testimonials = [
+export const testimonials: Testimonial[] = [
   {
     id: 5,
     link: "https://www.linkedin.com/in/bhanu-prasad-paitar-583188249/",
@@ -343,7 +354,7 @@ export const testimonials = [
 
 // ─── PROJECTS ────────────────────────────────────────────────────────────────
 
-export const projects = [
+export const projects: Project[] = [
   {
     id: 15,
     title: "AI Customer Support Agent (LangGraph)",
@@ -467,7 +478,7 @@ export const projects = [
 
 // ─── SKILLS ──────────────────────────────────────────────────────────────────
 
-export const skills = {
+export const skills: Skills = {
   languages: [
     "Java", "Python", "JavaScript", "TypeScript", "C", "SQL", "Bash",
   ],
