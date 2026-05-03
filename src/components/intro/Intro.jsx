@@ -1,8 +1,13 @@
 import React from "react";
-import { FaAward } from "react-icons/fa";
-import { VscFolderLibrary } from "react-icons/vsc";
-import ME from "../../assets/karthikeyaProfile2.jpg";
+import ME from "../../assets/KarthikeyaProfile.jpeg";
 import "./intro.css";
+
+const STATS = [
+  { value: "9.18", label: "CGPA" },
+  { value: "800+", label: "LeetCode" },
+  { value: "@ Salesforce", label: "Currently" },
+  { value: "IEEE", label: "Published" },
+];
 
 const Intro = () => {
   return (
@@ -12,37 +17,29 @@ const Intro = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="me" />
+            <img src={ME} alt="Karthikeya Boorla — Software Engineer" loading="lazy" />
           </div>
         </div>
         <div className="about__content">
+          <div className="about__stats">
+            {STATS.map(({ value, label }) => (
+              <div key={label} className="about__stat-card">
+                <h3>{value}</h3>
+                <small>{label}</small>
+              </div>
+            ))}
+          </div>
           <p>
-            I am a final-year Computer Science and Engineering undergraduate at
-            Chaitanya Bharathi Institute of Technology. My passion lies in
-            developing applications that create meaningful impact in the real
-            world.
+            I engineer software that works at scale — distributed backends, real-time systems,
+            and AI pipelines that go from idea to production. My stack spans
+            <strong> Java, Python, and TypeScript</strong> across microservices, REST APIs,
+            and full-stack web applications.
           </p>
           <p>
-            I am a highly motivated and detail-oriented individual with a robust
-            foundation in programming languages such as Java, Python, and C.
-            Proficient in software development methodologies like Agile, I also
-            have hands-on experience in frontend developmental tools. My
-            expertise lies in MERN stack development, along with proficiency in
-            Django.
+            On the AI side, I specialize in <strong>LLM agents, RAG pipelines, and agentic
+            workflows</strong> using LangGraph and LangChain. I obsess over clean architecture,
+            measurable impact, and shipping things that actually hold up under load.
           </p>
-          <p>
-            In addition to my programming skills, I excel in machine learning
-            and deep learning, utilizing frameworks like scikit-learn and
-            TensorFlow. With expertise in natural language processing, I craft
-            intelligent solutions adept at understanding human language
-            patterns. Moreover, I am proficient in cloud computing, boasting
-            hands-on experience with Google Cloud Computing and Amazon Web
-            Services (AWS). My skill set extends to various DevOps tools,
-            ensuring seamless integration and deployment of models. Furthermore,
-            I possess a strong understanding of different types of networks,
-            enhancing my ability to tackle diverse challenges efficiently.
-          </p>
-          {/* <p>In addition to my programming skills, I am well-versed in machine learning, utilizing frameworks such as scikit-learn and TensorFlow to create intelligent solutions. Furthermore, I possess proficiency in cloud computing, having hands-on experience with Google Cloud Computing.</p> */}
           <a href="#contact" className="btn btn-primary">
             Let's Talk
           </a>

@@ -1,42 +1,14 @@
-import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
+import React from 'react';
 import { MdOutlineEmail } from 'react-icons/md';
+import useContactForm from '../../hooks/useContactForm';
 import './contact.css';
 
-
-
 const Contact = () => {
-  const [message, setMessage] = useState(false);
-  const formRef = useRef();
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setMessage(true);
-    emailjs
-      .sendForm(
-        'service_ac9dhm5',
-        'template_zuzrjwi',
-        formRef.current,
-        'ahRzRP_DbaUrC5ZIS',
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log('message sent');
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+  const { formRef, status, handleSubmit } = useContactForm();
 
-    e.target.reset();
-  };
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
-      <h5>
-        I do receive your messages and will respond asap if the valid email is
-        provided :)
-      </h5>
       <h2>Contact Me</h2>
       <div className="container contact__container">
         <div className="contact__options">
@@ -44,7 +16,7 @@ const Contact = () => {
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
             <h5>karthikeyaburla@gmail.com</h5>
-            <a href="karthikeyaburla@gmail.com  ">Send a message</a>
+            <a href="mailto:karthikeyaburla@gmail.com">Send a message</a>
           </article>
         </div>
         <form ref={formRef} onSubmit={handleSubmit}>
@@ -55,7 +27,7 @@ const Contact = () => {
             required
           />
           <input
-            type="text"
+            type="email"
             placeholder="Your Email"
             name="user_email"
             required
@@ -66,10 +38,11 @@ const Contact = () => {
             name="message"
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary">
-            Send Message
+          <button type="submit" className="btn btn-primary" disabled={status === 'loading'}>
+            {status === 'loading' ? 'Sending...' : 'Send Message'}
           </button>
-          {message && <span>Thanks, I'll reply ASAP :)</span>}
+          {status === 'success' && <span>Thanks, I'll reply ASAP :)</span>}
+          {status === 'error' && <span>Something went wrong — please email me directly.</span>}
         </form>
       </div>
     </section>

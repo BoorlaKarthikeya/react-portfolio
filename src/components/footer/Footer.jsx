@@ -13,10 +13,9 @@ const Footer = () => {
         const num = Math.floor(Math.random() * 100);
         const response = await fetch(`https://dummyjson.com/quotes/${num}`);
         const data = await response.json();
-        console.log(data);
         setQuoteData(data);
-      } catch (error) {
-        console.log("Error:", error);
+      } catch {
+        // silent — quote is a non-critical enhancement
       }
     }
 
@@ -40,38 +39,15 @@ const Footer = () => {
           </em>
         </div>
       )}
-      {/* Rest of the JSX */}
       <ul className="permalinks">
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#experience">Skills</a>
-        </li>
-        <li>
-          <a href="#education">Education</a>
-        </li>
-        <li>
-          <a href="#course">Courses</a>
-        </li>
-        <li>
-          <a href="#Achievements">Achievements</a>
-        </li>
-        <li>
-          <a href="#work">Experience</a>
-        </li>
-        <li>
-          <a href="#portfolio">Projects</a>
-        </li>
-        <li>
-          <a href="#testmonials">Testimonials</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Experience</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#course">Certifications</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <div className="footer__socials">
         <a
@@ -97,7 +73,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="footer__copyright">
-        <small>&copy; ET {getYear()}. All rights reserved.</small>
+        <small>&copy; {getYear()} Karthikeya Boorla. All rights reserved.</small>
       </div>
     </footer>
   );
