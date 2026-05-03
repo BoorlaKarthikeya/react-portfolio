@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.claude/
+KarthikeyaBoorla_SWE_Resume/version2.tex
+KarthikeyaBoorla_SWE_Resume/main.tex
