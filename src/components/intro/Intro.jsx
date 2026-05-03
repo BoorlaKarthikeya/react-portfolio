@@ -30,16 +30,15 @@ const Intro = () => {
             ))}
           </div>
           <p>
-            Software Engineer at <strong>Salesforce</strong> building an AI-powered support agent
-            serving <strong>1.4M employees</strong> — deflecting 30% of tickets and cutting
-            resolution time from 2 days to 2 minutes using RAG pipelines and LLM agent systems.
-            Previously at <strong>Qualcomm</strong> scaling ETL infrastructure for semiconductor
-            manufacturing and growing test coverage from 0% to 70%.
+            I engineer software that works at scale — distributed backends, real-time systems,
+            and AI pipelines that go from idea to production. My stack spans
+            <strong> Java, Python, and TypeScript</strong> across microservices, REST APIs,
+            and full-stack web applications.
           </p>
           <p>
-            Full-stack engineer (React · Node.js · Spring Boot · PostgreSQL) with deep AI/ML
-            experience in LangGraph, LangChain, and agentic architectures. IEEE-published
-            researcher. CS from CBIT, GPA 9.18.
+            On the AI side, I specialize in <strong>LLM agents, RAG pipelines, and agentic
+            workflows</strong> using LangGraph and LangChain. I obsess over clean architecture,
+            measurable impact, and shipping things that actually hold up under load.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
