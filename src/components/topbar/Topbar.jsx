@@ -15,6 +15,7 @@ const NAV_ITEMS = [
   { href: 'work',         icon: <FaBriefcase />,            label: 'Experience' },
   { href: 'portfolio',    icon: <RiServiceLine />,          label: 'Projects' },
   { href: 'education',    icon: <HiOutlineAcademicCap />,   label: 'Education' },
+  { href: 'achievements', icon: <RiMedalLine />,            label: 'Achievements' },
   { href: 'contact',      icon: <BiMessageSquareDetail />,  label: 'Contact' },
 ];
 

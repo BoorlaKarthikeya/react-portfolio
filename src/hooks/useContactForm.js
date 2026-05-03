@@ -10,10 +10,10 @@ const useContactForm = () => {
     setStatus('loading');
     try {
       await emailjs.sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        'service_ac9dhm5',
+        'template_zuzrjwi',
         formRef.current,
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+        'ahRzRP_DbaUrC5ZIS',
       );
       setStatus('success');
       formRef.current.reset();
