@@ -13,14 +13,6 @@
     }
 }
 
-#work{
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0rem;
-    color: var(--color-primary);
-    text-align: center;
-    font-size: 2rem;
-}
 
 .vertical-timeline-element-title {
     font-family: var(--font-heading) !important;

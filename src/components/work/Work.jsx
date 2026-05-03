@@ -14,8 +14,8 @@ const TIMELINE_STYLE = {
 
 const Work = () => {
   return (
-    <div>
-      <div id="work">
+    <section id="work">
+      <div className="section__heading">
         <h3>Experience</h3>
       </div>
       <VerticalTimeline lineColor="var(--color-primary-variant)">
@@ -46,7 +46,7 @@ const Work = () => {
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
-    </div>
+    </section>
   );
 };
 

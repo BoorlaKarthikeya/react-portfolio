@@ -10,7 +10,7 @@ const Achievements = () => {
 
   return (
     <section id="achievements">
-      <div id="work">
+      <div className="section__heading">
         <h3>Achievements</h3>
       </div>
 

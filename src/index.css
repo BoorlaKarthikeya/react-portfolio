@@ -99,6 +99,15 @@ section > h2 {
   margin-bottom: 3rem;
 }
 
+.section__heading {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  color: var(--color-primary);
+  text-align: center;
+  font-size: 2rem;
+}
+
 .text-light {
   color: var(--color-primary-light);
 }

@@ -1,18 +1,21 @@
 import React from 'react';
 import { AiOutlineHome } from 'react-icons/ai';
-import { BiBook } from 'react-icons/bi';
+import { AiOutlineUser } from 'react-icons/ai';
+import { FaBriefcase } from 'react-icons/fa';
 import { RiServiceLine } from 'react-icons/ri';
 import { BiMessageSquareDetail } from 'react-icons/bi';
-import { FaBriefcase } from 'react-icons/fa';
+import { HiOutlineAcademicCap } from 'react-icons/hi';
+import { RiMedalLine } from 'react-icons/ri';
 import useScrollSpy from '../../hooks/useScrollSpy';
 import './topbar.css';
 
 const NAV_ITEMS = [
-  { href: 'home',       icon: <AiOutlineHome />,         label: 'Home' },
-  { href: 'experience', icon: <BiBook />,                label: 'Skills' },
-  { href: 'work',       icon: <FaBriefcase />,           label: 'Experience' },
-  { href: 'portfolio',  icon: <RiServiceLine />,         label: 'Projects' },
-  { href: 'contact',    icon: <BiMessageSquareDetail />, label: 'Contact' },
+  { href: 'home',         icon: <AiOutlineHome />,          label: 'Hero' },
+  { href: 'about',        icon: <AiOutlineUser />,          label: 'About Me' },
+  { href: 'work',         icon: <FaBriefcase />,            label: 'Experience' },
+  { href: 'portfolio',    icon: <RiServiceLine />,          label: 'Projects' },
+  { href: 'education',    icon: <HiOutlineAcademicCap />,   label: 'Education' },
+  { href: 'contact',      icon: <BiMessageSquareDetail />,  label: 'Contact' },
 ];
 
 const Topbar = () => {

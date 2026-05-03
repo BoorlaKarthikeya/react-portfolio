@@ -5,8 +5,8 @@ import "./courses.css";
 const Courses = () => {
   return (
     <section id="course">
-      <div id="work">
-        <h3>Courses / certifications</h3>
+      <div className="section__heading">
+        <h3>Courses / Certifications</h3>
       </div>
 
       <div className="container course__container">
