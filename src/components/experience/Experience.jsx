@@ -1,7 +1,6 @@
 import React from "react";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 import "./experience.css";
-import ShineBorder from "../../componentsUi/magicui/shine-border";
 
 const Experience = () => {
   return (
@@ -30,7 +29,7 @@ const Experience = () => {
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Bootsrap</h4>
+              <h4>Bootstrap</h4>
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />

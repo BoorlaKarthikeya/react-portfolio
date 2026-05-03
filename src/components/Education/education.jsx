@@ -1,12 +1,11 @@
 import React from "react";
-import { BorderBeam } from "../../componentsUi/magicui/border-beam";
 import IMG1 from "../../assets/cbit.jpeg";
 import IMG2 from "../../assets/srichaitanya.jpeg";
 import IMG3 from "../../assets/tswreis.jpeg";
 
 import "./education.css";
 
-const education = () => {
+const Education = () => {
   const soloProjects = [
     {
       id: 1,
@@ -56,7 +55,6 @@ const education = () => {
               <h3>{pro.title}</h3>
               <h3>{pro.subtitle}</h3>
               <p>{pro.grade}</p>
-              {/* <p>{pro.description}</p> */}
             </div>
             <div className="education__item-cta">
               <a
@@ -75,4 +73,4 @@ const education = () => {
   );
 };
 
-export default education;
+export default Education;

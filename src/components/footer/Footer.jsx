@@ -13,10 +13,9 @@ const Footer = () => {
         const num = Math.floor(Math.random() * 100);
         const response = await fetch(`https://dummyjson.com/quotes/${num}`);
         const data = await response.json();
-        console.log(data);
         setQuoteData(data);
-      } catch (error) {
-        console.log("Error:", error);
+      } catch {
+        // silent — quote is a non-critical enhancement
       }
     }
 
@@ -40,7 +39,6 @@ const Footer = () => {
           </em>
         </div>
       )}
-      {/* Rest of the JSX */}
       <ul className="permalinks">
         <li>
           <a href="#home">Home</a>
@@ -58,7 +56,7 @@ const Footer = () => {
           <a href="#course">Courses</a>
         </li>
         <li>
-          <a href="#Achievements">Achievements</a>
+          <a href="#achievements">Achievements</a>
         </li>
         <li>
           <a href="#work">Experience</a>
@@ -67,7 +65,7 @@ const Footer = () => {
           <a href="#portfolio">Projects</a>
         </li>
         <li>
-          <a href="#testmonials">Testimonials</a>
+          <a href="#testimonials">Testimonials</a>
         </li>
         <li>
           <a href="#contact">Contact</a>
@@ -97,7 +95,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="footer__copyright">
-        <small>&copy; ET {getYear()}. All rights reserved.</small>
+        <small>&copy; {getYear()} Karthikeya Boorla. All rights reserved.</small>
       </div>
     </footer>
   );

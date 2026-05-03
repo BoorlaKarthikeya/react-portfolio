@@ -10,7 +10,7 @@ import IMG8 from "../../assets/dl.jpeg";
 
 import "./courses.css";
 
-const courses = () => {
+const Courses = () => {
   const course = [
     {
       id: 10,
@@ -102,4 +102,4 @@ const courses = () => {
   );
 };
 
-export default courses;
+export default Courses;

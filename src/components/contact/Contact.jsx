@@ -18,15 +18,9 @@ const Contact = () => {
         formRef.current,
         'ahRzRP_DbaUrC5ZIS',
       )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log('message sent');
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+      .catch(() => {
+        setMessage(false);
+      });
 
     e.target.reset();
   };

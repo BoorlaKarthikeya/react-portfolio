@@ -1,6 +1,4 @@
 import React from "react";
-import { FaAward } from "react-icons/fa";
-import { VscFolderLibrary } from "react-icons/vsc";
 import ME from "../../assets/karthikeyaProfile2.jpg";
 import "./intro.css";
 
@@ -42,7 +40,6 @@ const Intro = () => {
             I possess a strong understanding of different types of networks,
             enhancing my ability to tackle diverse challenges efficiently.
           </p>
-          {/* <p>In addition to my programming skills, I am well-versed in machine learning, utilizing frameworks such as scikit-learn and TensorFlow to create intelligent solutions. Furthermore, I possess proficiency in cloud computing, having hands-on experience with Google Cloud Computing.</p> */}
           <a href="#contact" className="btn btn-primary">
             Let's Talk
           </a>

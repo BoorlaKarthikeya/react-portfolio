@@ -69,7 +69,7 @@ const Testimonials = () => {
     },
   ];
   return (
-    <section id="testmonials">
+    <section id="testimonials">
       <h5>Feedback from my peers & Mentors</h5>
       <div id="work">
         <h3>Testimonials</h3>
