@@ -110,19 +110,7 @@ To add a new project, add an entry to the `projects` array with:
 }
 ```
 
----
 
-## Deployment (Vercel)
-
-Vercel auto-detects Vite. Ensure these settings in your Vercel project:
-
-| Setting | Value |
-|---------|-------|
-| Framework Preset | Vite |
-| Build Command | `npm run build` |
-| Output Directory | `dist` |
-
----
 
 ## CI
 
