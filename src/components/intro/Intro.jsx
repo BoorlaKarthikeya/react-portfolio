@@ -1,12 +1,12 @@
 import React from "react";
-import ME from "../../assets/KarthikeyaProfile.jpeg";
+import ME from "../../assets/karthikeyaHeroImage.png";
 import "./intro.css";
 
 const STATS = [
   { value: "9.18", label: "CGPA" },
   { value: "800+", label: "LeetCode" },
-  { value: "2+", label: "Internships" },
-  { value: "10+", label: "Projects" },
+  { value: "@ Salesforce", label: "Currently" },
+  { value: "IEEE", label: "Published" },
 ];
 
 const Intro = () => {
@@ -30,18 +30,16 @@ const Intro = () => {
             ))}
           </div>
           <p>
-            Software Engineer at Salesforce, building AI-powered internal tools
-            with Agentforce, RAG pipelines, and LLM agent systems. Previously
-            a Software Engineer Intern at Qualcomm, where I worked on scalable
-            ETL pipelines for semiconductor manufacturing and improved backend
-            test coverage from 0% to ~70%.
+            Software Engineer at <strong>Salesforce</strong> building an AI-powered support agent
+            serving <strong>1.4M employees</strong> — deflecting 30% of tickets and cutting
+            resolution time from 2 days to 2 minutes using RAG pipelines and LLM agent systems.
+            Previously at <strong>Qualcomm</strong> scaling ETL infrastructure for semiconductor
+            manufacturing and growing test coverage from 0% to 70%.
           </p>
           <p>
-            I hold a B.E. in Computer Science from Chaitanya Bharathi Institute
-            of Technology (CGPA: 9.18). I'm a full-stack engineer comfortable
-            across React, Node.js, Spring Boot, and Salesforce platform. On the
-            AI side, I work with LangGraph, LangChain, RAG architectures, and
-            agentic workflows.
+            Full-stack engineer (React · Node.js · Spring Boot · PostgreSQL) with deep AI/ML
+            experience in LangGraph, LangChain, and agentic architectures. IEEE-published
+            researcher. CS from CBIT, GPA 9.18.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk

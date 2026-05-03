@@ -54,13 +54,15 @@
 .portfolio__item-image {
   position: relative;
   overflow: hidden;
-  height: 180px;
+  height: 200px;
   flex-shrink: 0;
+  background: #0d0d1a;
 }
 
 .portfolio__item-image img {
+  width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 500ms ease;
 }
 

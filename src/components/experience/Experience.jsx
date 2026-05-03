@@ -13,7 +13,7 @@ const SECTION_LABELS = {
 const Experience = () => {
   return (
     <section id="experience">
-      <h5>The Skills I Have</h5>
+      <h5>Technical Proficiencies</h5>
       <h2>Skills</h2>
       <div className="container experience__container">
         {Object.entries(skills).map(([key, items]) => (
