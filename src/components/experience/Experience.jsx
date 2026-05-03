@@ -3,11 +3,11 @@ import { skills } from "../../data/portfolio";
 import "./experience.css";
 
 const SECTION_LABELS = {
-  frontend: "Front-end Development",
-  backend: "Back-end / Databases",
-  salesforce: "Salesforce Platform",
+  languages: "Languages",
+  frontend: "Frontend",
+  backend: "Backend & Databases",
   aiml: "AI / ML",
-  devops: "DevOps / Tools",
+  devops: "Cloud & DevOps",
 };
 
 const Experience = () => {

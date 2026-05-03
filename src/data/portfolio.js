@@ -468,24 +468,21 @@ export const projects = [
 // ─── SKILLS ──────────────────────────────────────────────────────────────────
 
 export const skills = {
+  languages: [
+    "Java", "Python", "JavaScript", "TypeScript", "C", "SQL", "Bash",
+  ],
   frontend: [
-    "HTML", "CSS", "JavaScript", "TypeScript",
-    "React", "Redux", "Tailwind CSS", "Bootstrap", "Material UI",
+    "React.js", "Redux", "HTML5", "CSS3", "Tailwind CSS", "REST APIs", "Socket.IO",
   ],
   backend: [
-    "Node.js", "Express.js", "Spring Boot",
-    "Django", "PostgreSQL", "MySQL", "MongoDB", "Socket.IO", "JWT",
-  ],
-  salesforce: [
-    "Apex", "Lightning Web Components (LWC)", "Agentforce", "Force.com", "SOQL",
+    "Node.js", "Express.js", "Spring Boot", "Django",
+    "PostgreSQL", "MySQL", "MongoDB", "Microservices", "System Design",
   ],
   aiml: [
-    "LangGraph", "LangChain", "RAG Pipelines", "Agentforce",
-    "NumPy", "Pandas", "Scikit-learn", "TensorFlow",
-    "NLP", "Prompt Engineering", "Gemini API", "Streamlit",
+    "LangGraph", "LangChain", "RAG Pipelines", "LLM Agents",
+    "TensorFlow", "Scikit-learn", "NumPy", "Pandas", "NLP",
   ],
   devops: [
-    "Git / GitHub", "Docker", "AWS", "Jenkins",
-    "Shell Scripting / Bash", "Jira",
+    "AWS", "Docker", "Git", "CI/CD", "Jenkins", "Linux", "JUnit", "Mockito",
   ],
 };
