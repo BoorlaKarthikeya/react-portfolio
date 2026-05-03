@@ -1,62 +1,156 @@
+.portfolio__filter {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.portfolio__filter-btn {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-primary-variant);
+  background: transparent;
+  color: var(--color-light);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.portfolio__filter-btn:hover,
+.portfolio__filter-btn.active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: var(--glow-primary);
+}
+
 .portfolio__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
 }
 
 .portfolio__item {
-    background: var(--color-bg-variant);
-    padding: 1.3rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
+  background: var(--color-surface);
+  border-radius: 1.25rem;
+  border: 1px solid var(--color-primary-variant);
+  overflow: hidden;
+  transition: var(--transition);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio__item:hover {
-    border-color: var(--color-primary-variant);
-    background: transparent;
+  border-color: var(--color-primary);
+  box-shadow: var(--glow-primary);
+  transform: translateY(-4px);
 }
 
+/* image with gradient overlay */
 .portfolio__item-image {
-    border-radius: 1.5rem;
-    overflow: hidden;
-    height: 30%;
+  position: relative;
+  overflow: hidden;
+  height: 180px;
+  flex-shrink: 0;
 }
 
-
-.portfolio__item h3 {
-    margin: 2rem 0;
+.portfolio__item-image img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms ease;
 }
 
-.portfolio__item p {
-    margin: 0 0 1.2rem 0;
-    font-size: 0.9rem;
+.portfolio__item:hover .portfolio__item-image img {
+  transform: scale(1.05);
 }
 
-.portfolio__item-cta {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem; 
+.portfolio__item-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, var(--color-surface) 100%);
+  pointer-events: none;
+}
+
+/* featured badge */
+.portfolio__badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  z-index: 1;
+  box-shadow: var(--glow-primary);
 }
 
 .portfolio__item-content {
-    height: 50%;
+  padding: 1.25rem 1.25rem 0;
+  flex: 1;
 }
 
-@media screen and (max-width: 1024px){
-    .portfolio__container {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
-    }
+.portfolio__item-content h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-white);
 }
-  
-@media screen and (max-width: 600px){
-    .portfolio__container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
+
+.portfolio__item-content p.description {
+  font-size: 0.85rem;
+  color: var(--color-light);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
 }
- .btn{
-    display: flex;
-    justify-content: center;
- }
+
+/* tech pill tags */
+.portfolio__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio__tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  background: var(--color-primary-variant);
+  color: var(--color-primary-light);
+  padding: 0.2rem 0.55rem;
+  border-radius: 0.25rem;
+}
+
+.portfolio__item-cta {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0 1.25rem 1.25rem;
+}
+
+/* show all toggle */
+.portfolio__toggle {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .portfolio__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

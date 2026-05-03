@@ -1,5 +1,4 @@
 import React from "react";
-import { BsFillPatchCheckFill } from "react-icons/bs";
 import { skills } from "../../data/portfolio";
 import "./experience.css";
 
@@ -18,14 +17,13 @@ const Experience = () => {
       <h2>Skills</h2>
       <div className="container experience__container">
         {Object.entries(skills).map(([key, items]) => (
-          <div key={key} className="experience__frontend">
+          <div key={key}>
             <h3>{SECTION_LABELS[key]}</h3>
-            <div className="experience__content text-white">
+            <div className="experience__content">
               {items.map((skill) => (
-                <article key={skill} className="experience__details">
-                  <BsFillPatchCheckFill className="experience__details-icon" />
-                  <h4>{skill}</h4>
-                </article>
+                <span key={skill} className="skill-pill">
+                  {skill}
+                </span>
               ))}
             </div>
           </div>

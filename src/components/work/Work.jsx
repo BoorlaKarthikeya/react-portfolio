@@ -6,21 +6,27 @@ import "react-vertical-timeline-component/style.min.css";
 import { experience } from "../../data/portfolio";
 import "./work.css";
 
+const TIMELINE_STYLE = {
+  content: { background: "var(--color-surface)", color: "var(--color-white)", border: "1px solid var(--color-primary-variant)", boxShadow: "var(--shadow-card)" },
+  contentArrow: { borderRight: "7px solid var(--color-primary-variant)" },
+  icon: { background: "var(--color-bg-variant)", border: "2px solid var(--color-primary)" },
+};
+
 const Work = () => {
   return (
     <div>
       <div id="work">
-        <h3>Experience </h3>
+        <h3>Experience</h3>
       </div>
-      <VerticalTimeline>
+      <VerticalTimeline lineColor="var(--color-primary-variant)">
         {experience.map((item) => (
           <VerticalTimelineElement
             key={item.id}
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+            contentStyle={TIMELINE_STYLE.content}
+            contentArrowStyle={TIMELINE_STYLE.contentArrow}
             date={item.date}
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            iconStyle={TIMELINE_STYLE.icon}
             icon={
               <img
                 className="experienceImg"
@@ -31,14 +37,12 @@ const Work = () => {
             }
           >
             <h3 className="vertical-timeline-element-title">{item.title}</h3>
-            <h2 className="vertical-timeline-element-subtitle">{item.company}</h2>
-            <div>
-              <ul>
-                {item.bullets.map((bullet, i) => (
-                  <li key={i}>⚡{bullet}</li>
-                ))}
-              </ul>
-            </div>
+            <h4 className="vertical-timeline-element-subtitle">{item.company}</h4>
+            <ul>
+              {item.bullets.map((bullet, i) => (
+                <li key={i}>⚡ {bullet}</li>
+              ))}
+            </ul>
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
